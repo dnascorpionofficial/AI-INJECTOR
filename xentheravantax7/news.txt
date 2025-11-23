@@ -12,6 +12,7 @@ Version Code : 118
 • Shell notification off will be applied to sleeping mode also from now ✔️
 • Added a popup message in ram cleaning option ✔️
 • Added RUN_IN_BG direction on ram cleaning script ✔️
+• Replaced charsey disco font with gulax font ✔️
 |
 November 09 - 2025
 Version Code : 117
