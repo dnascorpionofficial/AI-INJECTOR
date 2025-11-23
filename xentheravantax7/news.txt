@@ -6,6 +6,13 @@ XENTHERA VANTA X7 CHANGELOGS
 first turn off your all modules in your root manager (No need to uninstall or reboot after turning off - just turn off) then completely drain your battery & let it switch off automatically
 then keep trying to restart alot times until the screen fully black and no response
 connect charger & restart your device, it may take sometime to restart,keep the charger connected and charge to 100%. after charge 100% turn on all your modules you have and do a reboot without removing the charger- After reboot keep charging for atleast 10 minutes in 100% charge. done
+---
+November 23 - 2025
+Version Code : 118
+• Shell notification off will be applied to sleeping mode also from now ✔️
+• Added a popup message in ram cleaning option ✔️
+• Added RUN_IN_BG direction on ram cleaning script ✔️
+|
 November 09 - 2025
 Version Code : 117
 • Changed the app fetching for assigning linux processing scheduling values in Normal mode & Sleeping mode ✔️
