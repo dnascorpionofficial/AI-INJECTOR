@@ -10,6 +10,8 @@ connect charger & restart your device, it may take sometime to restart,keep the 
 November 27 - 2025
 Version Code : 119
 • Added custom charging mode ✔️
+• Deleted 2 scorlling animations from general settings & performance settings to reduce GPU load ✔️
+• Added popup message in bypass charging toggle ✔️
 |
 November 23 - 2025
 Version Code : 118
