@@ -13,6 +13,7 @@ Version Code : 120
 • Fixed allignment for custom charging ✔️
 • Toast & Shell Notifications grouped to reduce the size of General settings section ✔️
 • Added popup message for AI Injector toggle ✔️
+• Fixed custom message not showing in some ROM ✔️
 |
 November 27 - 2025
 Version Code : 119
