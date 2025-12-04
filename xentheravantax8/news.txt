@@ -5,4 +5,4 @@ Version Code : 122
 • More improvements to reduce the load in WebUI ✔️
 • Changed popup info style in WebUI ✔️
 • Fixed all bugs in the bind mount logic ✔️
-• Added charging speed option only - won't work for now ❗
+• Added charging speed customization ✔️
