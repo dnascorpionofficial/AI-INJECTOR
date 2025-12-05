@@ -12,6 +12,7 @@ Version Code : 124
 ---
 December 04 - 2025
 Version Code : 123
+• Debugging added for failures which cost ~0.1% of cpu & gpu ✔️
 • Added notification delay fix in some ROM - Beta Stage ❗
 • Reduced unnecessary cpu load ✔️
 • Device spoof customization added ✔️
