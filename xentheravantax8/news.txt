@@ -2,6 +2,7 @@ XENTHERA VANTA X8 CHANGELOGS
 |
 November 30 - 2025
 Version Code : 122
+• Added device spoof settings - Need reboot to apply changes ✔️
 • More improvements to reduce the load in WebUI ✔️
 • Changed popup info style in WebUI ✔️
 • Fixed all bugs in the bind mount logic ✔️
