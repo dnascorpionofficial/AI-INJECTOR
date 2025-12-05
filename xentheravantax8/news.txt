@@ -2,6 +2,7 @@ XENTHERA VANTA X8 CHANGELOGS
 |
 December 06 - 2025
 Version Code : 124
+• Reduced the delay in post boot stage ✔️
 • Changed the default fast charging speed to save battery - take effects when it's necessary,not based on temperature ✔️
 • Added dead code injection to WebUI ✔️
 • Added hidden props load ✔️
