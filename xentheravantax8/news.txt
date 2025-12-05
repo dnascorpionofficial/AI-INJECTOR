@@ -4,11 +4,14 @@ December 06 - 2025
 Version Code : 124
 • Added dead code injection to WebUI ✔️
 • Added hidden props load ✔️
-• Optimized WebUI
+• Optimized WebUI ✔️
+• Smoother scorlling in performance mode ✔️
+• Added notification delay fix in some ROM (Beta Stage)
 ---
 December 04 - 2025
 Version Code : 123
 • Device spoof customization added ✔️
+• Reduced unnecessary cpu load ✔️
 ---
 November 30 - 2025
 Version Code : 122
