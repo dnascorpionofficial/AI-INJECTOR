@@ -2,15 +2,15 @@ XENTHERA VANTA X8 CHANGELOGS
 |
 December 06 - 2025
 Version Code : 124
+• Changed the default fast charging speed to save battery - take effects when it's necessary,not based on temperature ✔️
 • Added dead code injection to WebUI ✔️
 • Added hidden props load ✔️
-• Optimized WebUI ✔️
+• Device spoof customization added ✔️
 • Smoother scorlling in performance mode ✔️
-• Added notification delay fix in some ROM (Beta Stage)
 ---
 December 04 - 2025
 Version Code : 123
-• Device spoof customization added ✔️
+• Added notification delay fix in some ROM - Beta Stage ❗
 • Reduced unnecessary cpu load ✔️
 ---
 November 30 - 2025
