@@ -8,6 +8,7 @@ Version Code : 124
 • Added hidden props load ✔️
 • Smoother scorlling in performance mode ✔️
 • Added reboot button in device spoof & changed style ✔️
+• Combined spoof - non spoof module with spoof settings & changes module description ✔️
 ---
 December 04 - 2025
 Version Code : 123
