@@ -5,13 +5,14 @@ Version Code : 124
 • Changed the default fast charging speed to save battery - take effects when it's necessary,not based on temperature ✔️
 • Added dead code injection to WebUI ✔️
 • Added hidden props load ✔️
-• Device spoof customization added ✔️
 • Smoother scorlling in performance mode ✔️
+• Added reboot button in device spoof & changed style ✔️
 ---
 December 04 - 2025
 Version Code : 123
 • Added notification delay fix in some ROM - Beta Stage ❗
 • Reduced unnecessary cpu load ✔️
+• Device spoof customization added ✔️
 ---
 November 30 - 2025
 Version Code : 122
