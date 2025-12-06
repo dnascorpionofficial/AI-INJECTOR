@@ -4,6 +4,7 @@ December 06 - 2025
 Version Code : 125
 • Dropped charging speed support - will add soon ✔️
 • Reverted old fast charging support ✔️
+• Reverted few cpu tweaks like old x7 build ✔️
 ---
 Version Code : 124
 • Reduced the delay in post boot stage ✔️
