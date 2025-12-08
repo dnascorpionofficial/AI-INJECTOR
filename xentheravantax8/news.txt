@@ -3,7 +3,7 @@ XENTHERA VANTA X8 CHANGELOGS
 December 08 - 2025
 Version Code : 130
 • Splitted charging modes into 2 types & work with reboot only ✔️
-• 
+• Added few more props to improve ui on starting stage ✔️
 |
 Version Code : 129
 • Optimized full javascript with QPQ
