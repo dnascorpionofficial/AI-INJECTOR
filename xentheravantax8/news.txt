@@ -1,11 +1,34 @@
 XENTHERA VANTA X8 CHANGELOGS
 |
+December 08 - 2025
+Version Code : 130
+• Splitted charging modes into 2 types & work with reboot only ✔️
+• 
+|
+Version Code : 129
+• Optimized full javascript with QPQ
+Version Code : 128
+• Deleted again charging modes related stuffs from custom charging script & completely deleted charging mode in webui ✔️
+|
+Version Code : 127
+• Removed reboot button from charging mode change & apply those without reboot + added the logic in custom charging script ✔️
+• Fixed few webui bugs ✔️
+---
+December 07 - 2025
+Version Code : 126
+• Changed custom charging script & completely deleted charging speed section from it - it will work without it from now ✔️
+• Added webui changes with the new charging speed mode change with reboot only ✔️
+• Fixed spoof being applied even if we don't selected. only clicking reboot will change the spoof , same like that added in charging speed section ✔️
 December 06 - 2025
 Version Code : 125
 • Dropped charging speed support - will add soon ✔️
 • Reverted old fast charging support ✔️
 • Reverted few cpu tweaks like old x7 build ✔️
 ---
+December 06 - 2025
+Version Code : 125
+• Removed few cpu set related functions & reverted back to stable x7 build ✔️
+• Reverted charging speed ✔️
 Version Code : 124
 • Reduced the delay in post boot stage ✔️
 • Changed the default fast charging speed to save battery - take effects when it's necessary,not based on temperature ✔️
