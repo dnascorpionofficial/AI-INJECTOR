@@ -1,6 +1,11 @@
 XENTHERA VANTA X8 CHANGELOGS
 |
 December 18 - 2025
+Version Code : 132
+• Replaced Red magic 8 pro spoof with Red magic 11 pro ✔️
+• Removed cache cleaning while flashing module ✔️
+• Fixed options being back to default settings after reboot ✔️
+|
 Version Code : 131
 • Added a small delay on rebooting when changing spoof & charging speed ✔️
 • Deleted random delay and added a fixed delay in start of the module to avoid random reboot ✔️
