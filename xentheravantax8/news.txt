@@ -1,5 +1,12 @@
 XENTHERA VANTA X8 CHANGELOGS
 |
+January 01 - 2025
+Version Code : 133
+• Added icon for mmrl ✔️
+Thanks to zgx♥️
+• Added version code attached inside webui & module details ✔️
+• Some more .. news update soon ...
+---
 December 18 - 2025
 Version Code : 132
 • Replaced Red magic 8 pro spoof with Red magic 11 pro ✔️
