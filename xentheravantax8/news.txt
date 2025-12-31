@@ -5,7 +5,7 @@ Version Code : 133
 • Added icon for mmrl ✔️
 Thanks to zgx♥️
 • Added version code attached inside webui & module details ✔️
-• Some more .. news update soon ...
+• Fixed webui x theme loading issue by default ✔️
 ---
 December 18 - 2025
 Version Code : 132
