@@ -6,6 +6,7 @@ Version Code : 133
 Thanks to zgx♥️
 • Added version code attached inside webui & module details ✔️
 • Fixed webui x theme loading issue by default ✔️
+• Added support for APatch & forks ✔️
 ---
 December 18 - 2025
 Version Code : 132
