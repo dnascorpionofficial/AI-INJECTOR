@@ -17,7 +17,7 @@ Version Code : 132
 Version Code : 131
 • Added a small delay on rebooting when changing spoof & charging speed ✔️
 • Deleted random delay and added a fixed delay in start of the module to avoid random reboot ✔️
-• Cleaned few props from to avoid random reboot ✔️
+• Changed few props to avoid random reboot ✔️
 ---
 December 08 - 2025
 Version Code : 130
