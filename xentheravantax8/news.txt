@@ -5,6 +5,7 @@ February 04 - 2026
 Version Code : 134
 • Added OnePlus 15 Spoof ✔️
 • Fixed uninstallation to service.d ✔️
+• Stopped calling thermal service in powersaving mode to avoid multiple calls ✔️
 ---
 January 01 - 2026
 Version Code : 133
