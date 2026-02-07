@@ -1,6 +1,13 @@
 XENTHERA VANTA X8 CHANGELOGS
 |
 ---
+February 08 - 2026
+Version Code : 136
+• Optimized main code ✔️
+• Opmtimized normal mode ✔️
+• Optimized cpu threads ✔️
+• Protection fix to don't run same script multiple times ✔️
+---
 February 07 - 2026
 Version Code : 135
 • Added support in every rooted environments ✔️
