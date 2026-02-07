@@ -6,7 +6,7 @@ Version Code : 136
 • Optimized main code ✔️
 • Opmtimized normal mode ✔️
 • Optimized cpu threads ✔️
-• Protection fix to don't run same script multiple times ✔️
+• Protection fix for same script multiple times ✔️
 ---
 February 07 - 2026
 Version Code : 135
