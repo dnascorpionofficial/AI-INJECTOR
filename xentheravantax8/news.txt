@@ -1,6 +1,13 @@
 XENTHERA VANTA X8 CHANGELOGS
 |
 ---
+February 07 - 2026
+Version Code : 135
+• Added support in every rooted environments ✔️
+• Added an existance check to core script ✔️
+• Added build tag next to AI MODULE option ✔️
+• Logd changes ✔️
+---
 February 04 - 2026
 Version Code : 134
 • Added OnePlus 15 Spoof ✔️
