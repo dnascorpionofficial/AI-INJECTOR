@@ -5,7 +5,9 @@ February 08 - 2026
 Version Code : 137
 • Added more info in the spoof settings menu ✔️
 • Deletion of unnecessary cached files ✔️
-Nothing more to fix or add for now ...
+• Fixed repeated secure element service restart loop caused by vendor misconfiguration in xiaomi devices ✔️
+...
+Adding more things....
 |
 Version Code : 136
 • Optimized main code ✔️
