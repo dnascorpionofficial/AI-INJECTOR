@@ -4,7 +4,8 @@ XENTHERA VANTA X8 CHANGELOGS
 February 08 - 2026
 Version Code : 137
 • Added more info in the spoof settings menu ✔️
-• Nothing more to fix or add for now ...
+• Deletion of unnecessary cached files ✔️
+Nothing more to fix or add for now ...
 |
 Version Code : 136
 • Optimized main code ✔️
