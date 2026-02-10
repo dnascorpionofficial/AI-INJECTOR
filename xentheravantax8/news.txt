@@ -6,8 +6,10 @@ Version Code : 137
 • Added more info in the spoof settings menu ✔️
 • Deletion of unnecessary cached files ✔️
 • Fixed repeated secure element service restart loop caused by vendor misconfiguration in xiaomi devices ✔️
-
-Adding more things....
+• Added an option to export kernel error log & module logs to debug easily ✔️
+• Changed dnascorpionofficial tag with AI INJECTOR in webui header ✔️
+• Replaced few animations with new ✔️
+• Beta adaptive thermal parameters integrated into sleeping mode for faster cooling when screen off ✔️
 ---
 February 08 - 2026
 Version Code : 136
