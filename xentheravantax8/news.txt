@@ -1,6 +1,13 @@
 XENTHERA VANTA X8 CHANGELOGS
 |
 ---
+February 11 - 2026
+Version Code : 138
+• Fixed random messages on start ✔️
+• Added a reforge completion notification to avoid confusion when shell notifications are off ✔️
+• Changed about info scorpion to tg username ✔️
+• Changed some optimizations on start ✔️
+---
 February 09 - 2026
 Version Code : 137
 • Added more info in the spoof settings menu ✔️
