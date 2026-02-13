@@ -3,6 +3,7 @@ XENTHERA VANTA X8 CHANGELOGS
 ---
 February 14 - 2026
 Version Code : 139
+First boot will take lit more battery in some case,back to normal within 2-8 minutes
 • Improved Mali GPU driver initialization sequence ✔️
 • Optimized graphics driver during system startup ✔️
 • Enhanced GPU pipeline warmup for faster rendering response ✔️
