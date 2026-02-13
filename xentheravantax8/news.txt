@@ -1,6 +1,16 @@
 XENTHERA VANTA X8 CHANGELOGS
 |
 ---
+February 14 - 2026
+Version Code : 139
+• Improved Mali GPU driver initialization sequence ✔️
+• Optimized graphics driver during system startup ✔️
+• Enhanced GPU pipeline warmup for faster rendering response ✔️
+• Reduced initial compilation latency ✔️
+• Improved graphics subsystem preparation at boot ✔️
+• Added import&export AI INECTOR settings menu
+• Added copyright tag ✔️
+---
 February 11 - 2026
 Version Code : 138
 • Fixed random messages on start ✔️
