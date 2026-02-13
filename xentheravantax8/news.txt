@@ -8,7 +8,7 @@ Version Code : 139
 • Enhanced GPU pipeline warmup for faster rendering response ✔️
 • Reduced initial compilation latency ✔️
 • Improved graphics subsystem preparation at boot ✔️
-• Added import&export AI INECTOR settings menu
+• Added import & export AI INECTOR settings menu ✔️
 • Added copyright tag ✔️
 ---
 February 11 - 2026
