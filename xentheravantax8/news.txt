@@ -3,6 +3,7 @@ XENTHERA VANTA X8 CHANGELOGS
 ---
 February 19 - 2026
 Version Code : 140
+• Upgraded BETA mode in CPU selection on performance settings ✔️
 • Improved core initialization stability ✔️
 • Rewrited settings info properly ✔️
 • Improved support in temperature based reduce charging speed ✔️
