@@ -4,6 +4,9 @@ XENTHERA VANTA X8 CHANGELOGS
 February 19 - 2026
 Version Code : 140
 • Improved core initialization stability ✔️
+• Rewrited settings info properly ✔️
+• Improved support in temperature based reduce charging speed ✔️
+• Added more information when exporting logs ✔️
 • Optimized script execution priority and persistence ✔️
 • Improved custom charging controller accuracy ✔️
 • Fixed fast charging & slow charging ✔️
@@ -14,7 +17,7 @@ Version Code : 140
 • Enhanced graphics preload initialization sequence ✔️
 • Optimized SurfaceFlinger and rendering pipeline performance ✔️
 • Improved system responsiveness and latency handling ✔️
-• Enhanced battery drain monitoring and logging accuracy ✔️
+• Removed unnecessary logging in performance mode ✔️
 ---
 February 14 - 2026
 Version Code : 139
