@@ -5,6 +5,7 @@ February 22 - 2026
 Version Code : 141
 • Added SELinux context correction to prevent rare module access issues ✔️
 • Refined installation script execution for improved efficiency and reliability ✔️
+• Added SELinux details when exporting logs ✔️
 More things,update news soon...
 ---
 February 19 - 2026
