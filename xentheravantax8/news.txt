@@ -1,5 +1,6 @@
 XENTHERA VANTA X8 CHANGELOGS
 |
+Time to Update thermal tweaks 
 ---
 February 22 - 2026
 Version Code : 141
