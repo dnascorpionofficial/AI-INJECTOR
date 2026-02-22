@@ -5,12 +5,14 @@ February 22 - 2026
 Version Code : 141
 • Added SELinux context correction to prevent rare module access issues ✔️
 • Refined installation script execution for improved efficiency and reliability ✔️
-• Added SELinux details when exporting logs ✔️
+• Added SELinux & Freez list details when exporting logs ✔️
+• Added security check when adding major system apps into Pause Applist ✔️
+• Cleaned core script for reducing CPU overhead when changing WebUI settings ✔️
 More things,update news soon...
 ---
 February 19 - 2026
 Version Code : 140
-• Upgraded BETA mode in CPU selection on performance settings ✔️
+• Changed BETA mode in performance settings CPU selection to Splitted CPU ✔️
 • Improved core initialization stability ✔️
 • Rewrited settings info properly ✔️
 • Improved support in temperature based reduce charging speed ✔️
