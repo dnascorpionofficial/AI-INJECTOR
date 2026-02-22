@@ -3,6 +3,7 @@ XENTHERA VANTA X8 CHANGELOGS
 ---
 February 22 - 2026
 Version Code : 141
+• Added check for meta modules to properly install AI INJECTOR ✔️
 • Added SELinux context correction to prevent rare module access issues ✔️
 • Refined installation script execution for improved efficiency and reliability ✔️
 • Added SELinux & Freez list details when exporting logs ✔️
