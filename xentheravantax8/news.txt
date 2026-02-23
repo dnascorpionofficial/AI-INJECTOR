@@ -9,7 +9,7 @@ Version Code : 142
 • Experimenting LMKD changes explicitly to performance apps ✔️
 • Reduced RAM Swap ✔️
 • Experimental performance tweaks & normal mode tweaks ✔️
-• Rewrited idle values for best battery when device is in Idle ✔️
+• Rewrited idle values for best battery when device is in idle ✔️
 ---
 February 22 - 2026
 Version Code : 141
