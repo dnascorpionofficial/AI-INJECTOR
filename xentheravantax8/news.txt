@@ -1,6 +1,15 @@
 XENTHERA VANTA X8 CHANGELOGS
 |
-Time to Update Thermal tweaks 
+February 23 - 2026
+Version Code : 142
+• Added unnecessary background services change state ✔️
+• Improved thermal status on normal & performance mode ✔️
+• Added bg service status when exporting logs ✔️
+• Added backup support for bg services ✔️
+• Experimenting LMKD changes explicitly to performance apps ✔️
+• Reduced RAM Swap ✔️
+• Experimental performance tweaks & normal mode tweaks ✔️
+• Rewrited idle values for best battery when device is in Idle ✔️
 ---
 February 22 - 2026
 Version Code : 141
