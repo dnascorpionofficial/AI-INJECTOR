@@ -1,5 +1,15 @@
 XENTHERA VANTA X8 CHANGELOGS
 |
+February 24 - 2026
+Version Code : 143
+• Fixed pause applist function ✔️
+• Changed main script working state ✔️
+• Upgraded few experimental performance tweaks ✔️
+• Removed repeated calls from main script to reduce cpu overhead on boot ✔️
+• Reduced the time of reforge ✔️
+• Added few more safe apps on pause list ✔️
+• Changed idle configurations ✔️
+---
 February 23 - 2026
 Version Code : 142
 • Added unnecessary background services change state ✔️
