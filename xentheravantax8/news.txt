@@ -2,6 +2,8 @@ XENTHERA VANTA X8 CHANGELOGS
 |
 February 25 - 2026
 Version Code : 144
+• Fully adapted with ksu & forks ✔️
+• Added support in few more MTK devices ✔️
 • Changed internal webui config ✔️
 • Changed configuration fetching to pure shell ✔️
 • Added link support in news ✔️
