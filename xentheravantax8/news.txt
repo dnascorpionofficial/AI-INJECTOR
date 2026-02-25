@@ -1,5 +1,7 @@
 XENTHERA VANTA X8 CHANGELOGS
 |
+"144 update soon with some major changes,wait for the update"
+---
 February 24 - 2026
 Version Code : 143
 • Fixed pause applist function ✔️
