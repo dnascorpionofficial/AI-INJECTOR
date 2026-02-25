@@ -1,7 +1,18 @@
 XENTHERA VANTA X8 CHANGELOGS
 |
-"144 update soon with some major changes,wait for the update"
-'Okay guys after 10 hours of re writing many things,device isn't booting'
+February 25 - 2026
+Version Code : 144
+• Changed internal webui config ✔️
+• Changed configuration fetching to pure shell ✔️
+• Added link support in news ✔️
+• Completely removed manual call to major scripts ✔️
+• Remove debugging from main script ✔️
+• GPU switching optimized ✔️
+• New experimental tweaks in normal mode for battery backup ✔️
+• From now AI INJECTOR take 0.0% CPU which is the major change in 144 update ✔️
+'You guys can verify with termux, type su then enter'
+'type this command without brackets (busybox top -b -n 1 | grep SCORPION)'
+in the results you can see {sh} before the sh is cpu usage.
 ---
 February 24 - 2026
 Version Code : 143
