@@ -17,6 +17,7 @@ Version Code : 144
 You guys can verify with termux,type su then enter & this command
 'busybox top -b -n 1 | grep SCORPION'
 in the results you can see {sh} before the sh is cpu usage.
+Major bug found in 144,Normal mode after performance mode leads to revert the settings of pause applist internally.
 ---
 February 24 - 2026
 Version Code : 143
