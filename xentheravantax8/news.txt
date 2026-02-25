@@ -2,7 +2,8 @@ XENTHERA VANTA X8 CHANGELOGS
 |
 February 25 - 2026
 Version Code : 144
-• Fixed long package named apps not displaying properly in performance applist,Lock applist,pause applist ✔️
+• Fixed long package named apps not displaying properly in performance applist,lock applist,pause applist ✔️
+• Updated settings info for myself to remember the styles when adding news ✔️
 • Fully adapted with ksu & forks ✔️
 • Added support in few more MTK devices ✔️
 • Changed internal webui config ✔️
