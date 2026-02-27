@@ -1,5 +1,16 @@
 XENTHERA VANTA X8 CHANGELOGS
 |
+February 27 - 2026
+Version Code : 145
+• Recall freez script when normal mode activated to keep freezlist safe ✔️
+• Extended support to A16 Partially ✔️
+• Removed subshell spawn ✔️
+• Added popup message when adding & removing apps in alive list, performance applist & pause applist ✔️
+• Fully optimized freez script ✔️
+• Dropped old array method in few scripts ✔️
+• Loop method changed ✔️
+• Reduced time to apply tweaks in normal mode ✔️
+---
 February 25 - 2026
 Version Code : 144
 • Fixed long package named apps not displaying properly in performance applist,lock applist,pause applist ✔️
