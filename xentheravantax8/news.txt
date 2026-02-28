@@ -1,5 +1,7 @@
 XENTHERA VANTA X8 CHANGELOGS
 |
+x9 update soon
+---
 February 27 - 2026
 Version Code : 145
 • Recall freez script when normal mode activated to keep freezlist safe ✔️
