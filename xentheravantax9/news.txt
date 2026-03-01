@@ -2,4 +2,21 @@ XENTHERA VANTA X9 CHANGELOGS
 
 March 01 - 2026
 Version Code : 146
-• It's not okay to share now
+• Introduced runtime-level variable caching ✔️
+• Tuned properly RAM ✔️
+For 8GB users, It's fine. i don't have 6GB device so i did some values without testing but that doesn't mean it's bad
+• Rewrited popup app ✔️
+• Reduced repeated system calls ✔️
+• Optimized internal state reuse ✔️
+• Improved execution flow efficiency ✔️
+• Reduced redundant parsing operations ✔️
+• Lower CPU wakeups ✔️
+• Reduced overhead during loops ✔️
+• Better battery efficiency ✔️
+• Cleaner runtime execution ✔️
+• Changed toast calling method that only work with new popup app ✔️
+• Splitted emojis into seperate part to avoid conflict ✔️
+• Rewrited many fork into pure built in shell ✔️
+• Replaced labeled injection bar with a cleaner minimalist progress animation on installation ✔️
+• Fixed app not installing in some rom on module installation ✔️
+• Update More Soon 
