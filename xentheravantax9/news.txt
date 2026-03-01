@@ -20,3 +20,7 @@ For 8GB users, It's fine. i don't have 6GB device so i did some values without t
 • Replaced labeled injection bar with a cleaner minimalist progress animation on installation ✔️
 • Fixed app not installing in some rom on module installation ✔️
 • Update More Soon 
+
+X8 Changelogs: Download(https://www.mediafire.com/file/k5wymwkfr9irkrf/x8_changelogs.txt/file)
+
+X7 Changlogs: Download(https://www.mediafire.com/file/tpvuu8r14tyi7my/x7_changelogs.txt/file)
