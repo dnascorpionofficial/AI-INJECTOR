@@ -1,5 +1,16 @@
 XENTHERA VANTA X9 CHANGELOGS
 
+March 02 - 2026
+Version Code : 147
+• Rewrited apk with disabled signature verification,Die after the Toast popup & changed icon ✔️
+• Changed settings path to debug properly ✔️
+• Reduced forks call ✔️
+• Rewrited some bash section into pure shell ✔️
+• Switched to faster loop ✔️
+• Optimized post boot script ✔️
+• Replaced rewrite on every change into fixed values on every change ✔️
+• Changed settings import & export related function adapted with future builds ✔️
+---
 March 01 - 2026
 Version Code : 146
 • Introduced runtime-level variable caching ✔️
