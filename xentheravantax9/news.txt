@@ -1,6 +1,10 @@
 XENTHERA VANTA X9 CHANGELOGS
 
 March 02 - 2026
+Version Code : 148
+• Fixed pause applist adding & removing app failure ✔️
+• Improved action.sh ✔️
+|
 Version Code : 147
 • Rewrited apk with disabled signature verification,Die after the Toast popup & changed icon ✔️
 • Changed settings path to debug properly ✔️
