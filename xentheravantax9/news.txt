@@ -11,7 +11,8 @@ when exporting logs,settings,importing settings,adding/removing apps in pause ap
 • Exporting will be saved into "Download/AI-INJECTOR" to avoid confusions ✔️
 • Tried to fix few kernel errors ✔️
 Those kernel errors aren't from module but it need to be fixed to save battery because AI INJECTOR need to satisfy users who trust INJECTOR
-'Just reminding everyone that No single issue from module yet reported or found that is harmful to device'
+
+'just reminding everyone that No single issue from module yet reported or found that is harmful to device'
 ---
 March 02 - 2026
 Version Code : 148
