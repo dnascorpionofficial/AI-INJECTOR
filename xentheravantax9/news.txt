@@ -12,7 +12,7 @@ when exporting logs,settings,importing settings,adding/removing apps in pause ap
 • Tried to fix few kernel errors ✔️
 Those kernel errors aren't from module but it need to be fixed to save battery because AI INJECTOR need to satisfy users who trust me.
 
-'Just a reminder that not a single issue has been reported or found in the module so far. I also want to assure everyone that I will never implement anything harmful to your device'
+'Just a reminder that not a single issue has been reported or found in the module so far which is harmful. I also want to assure everyone that I will never implement anything harmful to your device'
 ---
 March 02 - 2026
 Version Code : 148
