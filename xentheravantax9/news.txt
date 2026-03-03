@@ -1,5 +1,18 @@
 XENTHERA VANTA X9 CHANGELOGS
 
+March 04 - 2026
+Version Code : 149
+• Added more debug when exporting logs ✔️
+• Added persistant popup message in few sections to not confuse users ✔️
+when exporting logs,settings,importing settings,adding/removing apps in pause applist,performance applist, alive applist.
+• Added new file picker menu when importing settings ✔️
+• Fixed props not applying by default ✔️
+• Tweaked more GPU Memory optimization ✔️
+• Exporting will be saved into "Download/AI-INJECTOR" to avoid confusions ✔️
+• Tried to fix few kernel errors ✔️
+Those kernel errors aren't from module but it need to be fixed to save battery because AI INJECTOR need to satisfy users who trust INJECTOR
+'Just reminding everyone that No single issue from module yet reported or found that is harmful to device'
+---
 March 02 - 2026
 Version Code : 148
 • Fixed pause applist adding & removing app failure ✔️
