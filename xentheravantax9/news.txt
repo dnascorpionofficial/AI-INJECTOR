@@ -10,9 +10,9 @@ when exporting logs,settings,importing settings,adding/removing apps in pause ap
 • Tweaked more GPU Memory optimization ✔️
 • Exporting will be saved into "Download/AI-INJECTOR" to avoid confusions ✔️
 • Tried to fix few kernel errors ✔️
-Those kernel errors aren't from module but it need to be fixed to save battery because AI INJECTOR need to satisfy users who trust INJECTOR
+Those kernel errors aren't from module but it need to be fixed to save battery because AI INJECTOR need to satisfy users who trust me.
 
-'just reminding everyone that No single issue from module yet reported or found that is harmful to device'
+'Just a reminder that not a single issue has been reported or found in the module so far. I also want to assure everyone that I will never implement anything harmful to your device'
 ---
 March 02 - 2026
 Version Code : 148
