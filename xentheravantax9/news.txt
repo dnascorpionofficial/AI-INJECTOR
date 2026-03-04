@@ -2,6 +2,7 @@ XENTHERA VANTA X9 CHANGELOGS
 
 March 04 - 2026
 Version Code : 149
+• Tried to improve RAM Management ✔️
 • Added more debug when exporting logs ✔️
 • Added persistant popup message in few sections to not confuse users ✔️
 when exporting logs,settings,importing settings,adding/removing apps in pause applist,performance applist, alive applist.
