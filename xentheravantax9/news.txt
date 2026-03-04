@@ -4,7 +4,6 @@ March 04 - 2026
 Version Code : 150
 • Added auto reload webui after importing settings to show all updated settings properly ✔️
 • Changed animation on pause applist & custom charging ✔️
-Thinking something more to do in 150
 |
 Version Code : 149
 • Tried to improve RAM Management ✔️
