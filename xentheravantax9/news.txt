@@ -1,3 +1,15 @@
+No updates in the news section lately — things have been quiet, and that’s actually a good sign.
+
+Over the last 150 builds, the module has reached a point where build 150 is extremely stable, with no major issues reported so far. Because of that, there isn’t much left to tweak right now, and pushing updates just for the sake of updates doesn’t make much sense.
+
+If any issues appear, feel free to report them as usual
+
+So I’ll be taking a short break from module updates for a while. Development will resume once there are meaningful improvements or new ideas worth implementing.
+
+A special thanks to my testers — Black Fog, Soofi, Chill Boi, Kyoraku & Sang Yan — for constantly flashing experimental builds and providing valuable feedback without hesitation. Your support helped make this project far more stable.
+
+Appreciate everyone who continues to use and support the project. 🚀
+
 XENTHERA VANTA X9 CHANGELOGS
 
 March 04 - 2026
