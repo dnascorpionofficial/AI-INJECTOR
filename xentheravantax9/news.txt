@@ -6,6 +6,8 @@ Version Code : 151
 • Added custom theme support in webui ✔️
 • Added support in theme also when exporting & importing settings ✔️
 • Added a fallback when user accidentally select dark colours ✔️
+• Fixed few animations not working ✔️
+• Removed all hardcorded icons ✔️
 
 No updates in the news section lately — things have been quiet, and that’s actually a good sign.
 
