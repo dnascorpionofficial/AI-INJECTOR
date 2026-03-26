@@ -3,8 +3,8 @@ XENTHERA VANTA X9 CHANGELOGS
 March 27 - 2026
 Version Code : 152
 • Fixed installation in FolkPatch Manager ✔️
-• Fixed fast charging not properly applying via webui ✔️
-• h3993
+• Fixed fast charging not properly applying via WebUI ✔️
+• Fixed news update not showing on loading WebUI ✔️
 ---
 March 16 - 2026
 Version Code : 151
