@@ -4,6 +4,7 @@ March 27 - 2026
 Version Code : 152
 • Fixed installation in FolkPatch Manager ✔️
 • Fixed fast charging not properly applying via webui ✔️
+• h
 ---
 March 16 - 2026
 Version Code : 151
