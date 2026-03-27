@@ -1,5 +1,7 @@
 XENTHERA VANTA X9 CHANGELOGS
 
+'Hi Sang Yan'
+
 March 27 - 2026
 Version Code : 152
 • Fixed installation in FolkPatch Manager ✔️
