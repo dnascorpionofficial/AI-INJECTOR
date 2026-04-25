@@ -8,8 +8,7 @@ Version Code : 153
 • Enhanced root manager detection during installation ✔️
 • Fixed random issues with GPU path detection ✔️
 • Introduced a few experimental kernel parameter tweaks ✔️
-
-
+---
 March 27 - 2026
 Version Code : 152
 • Fixed installation in FolkPatch Manager ✔️
