@@ -2,6 +2,7 @@ XENTHERA VANTA X9 CHANGELOGS
 
 April 27 - 2026
 Version Code : 154
+• Fixed bugs in installation script ✔️
 • Added cache cleaning when opening performance mode ✔️
 • Higher battery drain in sleeping mode fixed ✔️
 • Added new options support in settings backup & restore ✔️
