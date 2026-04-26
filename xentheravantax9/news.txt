@@ -1,5 +1,12 @@
 XENTHERA VANTA X9 CHANGELOGS
 
+April 27 - 2026
+Version Code : 154
+• Reduced fork calls in configuration ✔️
+• Added performance increase switch in performance settings ✔️
+This feature will heatup device more if you don't have good external cooling
+• Screen state detections improved ✔️
+---
 April 25 - 2026
 Version Code : 153
 'Battery drain may be slightly higher in Normal mode compared to the 152 build. It should stabilize and get optimized after about a day of regular use'
