@@ -2,6 +2,9 @@ XENTHERA VANTA X9 CHANGELOGS
 
 April 25 - 2026
 Version Code : 153
+• Optimized WebUI ✔️
+• Fixed few scroll effects in alive list ✔️
+• Added device checks in WebUI ✔️
 • Optimized GPU power handling for both normal and performance modes ✔️
 • Improved sleeping mode by redirecting it to force idle ✔️
 • Removed unnecessary action button from root managers that already include WebUI ✔️
