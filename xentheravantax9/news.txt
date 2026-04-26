@@ -3,7 +3,7 @@ XENTHERA VANTA X9 CHANGELOGS
 April 27 - 2026
 Version Code : 154
 • Added cache cleaning when opening performance mode ✔️
-• Sleeping mode over battery draining fixed ✔️
+• Higher battery drain in sleeping mode fixed ✔️
 • Added new options support in settings backup & restore ✔️
 • Update toast app instead of uninstall & reinstall when installing module ✔️
 • Battery saving improvements ✔️
