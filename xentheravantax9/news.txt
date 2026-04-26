@@ -2,7 +2,7 @@ XENTHERA VANTA X9 CHANGELOGS
 
 April 25 - 2026
 Version Code : 153
-"Battery drain may be slightly higher in Normal mode compared to the 152 build. It should stabilize and get optimized after about a day of regular use"
+'Battery drain may be slightly higher in Normal mode compared to the 152 build. It should stabilize and get optimized after about a day of regular use'
 • Optimized WebUI ✔️
 • Fixed few scroll effects in alive list ✔️
 • Added device checks in WebUI ✔️
