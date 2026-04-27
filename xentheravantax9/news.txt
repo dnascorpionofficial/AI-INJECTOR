@@ -1,6 +1,12 @@
 XENTHERA VANTA X9 CHANGELOGS
 
 April 27 - 2026
+Version Code : 155
+• Fixed heating issues in normal use ✔️
+• Removed increase performance related stuff completely ✔️
+• Fixed network bugs in some rom ✔️
+• Added few more packages in whitelist apps of cache cleaner ✔️
+|
 Version Code : 154
 • Fixed bugs in installation script ✔️
 • Added cache cleaning when opening performance mode ✔️
