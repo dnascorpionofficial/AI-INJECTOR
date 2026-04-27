@@ -1,5 +1,15 @@
 XENTHERA VANTA X9 CHANGELOGS
 
+April 28 - 2026
+• Changed toggle styles ✔️
+• Toggle & Few sections adapted with WebUI theme ✔️
+• Detailed explanation in exported logs ✔️
+• Removed AI INJECTOR main title animation ✔️
+• Fixed theme & font not loading when importing settings ✔️
+• Delete cached module files on reboot ✔️
+• Bypass/idle charging description disabled by default ✔️
+• Few WebUI optimizations ✔️
+---
 April 27 - 2026
 Version Code : 155
 • Fixed heating issues in normal use ✔️
