@@ -1,6 +1,8 @@
 XENTHERA VANTA X9 CHANGELOGS
 
 April 28 - 2026
+• Removed few repeat checks from installtion script ✔️
+• Fixed meta module checks in folkpatch ✔️
 • Changed toggle styles ✔️
 • Toggle & Few sections adapted with WebUI theme ✔️
 • Detailed explanation in exported logs ✔️
