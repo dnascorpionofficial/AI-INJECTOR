@@ -1,7 +1,7 @@
 XENTHERA VANTA X9 CHANGELOGS
 
 April 28 - 2026
-• Fixed wrong battery drain values for first time after reboot ✔️
+Version Code : 156
 • Removed few repeat checks from installtion script ✔️
 • Fixed meta module checks in folkpatch ✔️
 • Changed toggle styles ✔️
