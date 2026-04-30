@@ -1,5 +1,13 @@
 XENTHERA VANTA X9 CHANGELOGS
 
+May 01 - 2026
+Version Code : 157
+• Fixed battery drain logging errors ✔️
+• Refined normal and sleeping modes for improved balance between performance and power saving ✔️
+• Added idle tuning extended support by creating idle_mode in lib folder ✔️
+• Added experimental temperature controllers in normal mode ✔️
+• Implemented execution guard to prevent redundant script restarts ✔️ 
+---
 April 28 - 2026
 Version Code : 156
 • Removed few repeat checks from installtion script ✔️
