@@ -1,5 +1,12 @@
 XENTHERA VANTA X9 CHANGELOGS
 
+May 04 - 2026
+Version Code : 158
+• Changed samsung s24 ultra spoof with lenovo legion gen 5 tab ✔️
+• Deep doze into sleeping mode framework ✔️
+• Improved normal use battery backup ✔️
+'Remaining changlogs update later'
+---
 May 01 - 2026
 Version Code : 157
 • Fixed battery drain logging errors ✔️
