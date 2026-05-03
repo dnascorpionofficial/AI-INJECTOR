@@ -8,7 +8,7 @@ Version Code : 158
 • Added support for deep doze removal ✔️
 • Added few more checks in battery draining log side ✔️
 • Fixed log clearing when counter resets ✔️
-• Changed samsung s24 ultra spoof with lenovo legion gen 5 tab ✔️
+• Replaced samsung s24 ultra spoof with lenovo legion gen 5 tab ✔️
 • Deep doze into sleeping mode framework ✔️
 • Improved normal use battery backup ✔️
 ---
