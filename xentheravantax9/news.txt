@@ -2,10 +2,15 @@ XENTHERA VANTA X9 CHANGELOGS
 
 May 04 - 2026
 Version Code : 158
+• Persistent logs across reboot ✔️
+• Removed log file creation on reboot ✔️
+• Removed debug lines from installation ✔️
+• Added support for deep doze removal ✔️
+• Added few more checks in battery draining log side ✔️
+• Fixed log clearing when counter resets ✔️
 • Changed samsung s24 ultra spoof with lenovo legion gen 5 tab ✔️
 • Deep doze into sleeping mode framework ✔️
 • Improved normal use battery backup ✔️
-'Remaining changlogs update later'
 ---
 May 01 - 2026
 Version Code : 157
