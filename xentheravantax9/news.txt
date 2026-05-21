@@ -1,5 +1,10 @@
 XENTHERA VANTA X9 CHANGELOGS
 
+May 21 - 2026
+Version Code : 159
+• Fixed theme not applying in custom charging section ✔️
+• Experimental changes add soon 
+---
 May 04 - 2026
 Version Code : 158
 • Persistent logs across reboot ✔️
