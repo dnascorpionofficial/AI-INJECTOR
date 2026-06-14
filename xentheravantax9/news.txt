@@ -1,5 +1,13 @@
 XENTHERA VANTA X9 CHANGELOGS
 
+June 15 - 2026
+Version Code : 160
+• Disabled low-power display restrictions for improved visual responsiveness.
+• Enabled dynamic CPU core downscaling, allowing cores to efficiently transition into idle states when under low load.
+• Enabled backpressure handling to prevent SurfaceFlinger from submitting frames before the GPU is ready, reducing potential stutters and frame pacing issues.
+• Switched the rendering backend from OpenGL to Vulkan for enhanced graphics performance and modern API support.
+• Introduced experimental low-latency audio optimizations aimed at reducing audio processing delays
+---
 May 21 - 2026
 Version Code : 159
 • Fixed theme not applying in custom charging section ✔️
