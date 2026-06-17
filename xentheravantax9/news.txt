@@ -1,5 +1,12 @@
 XENTHERA VANTA X9 CHANGELOGS
 
+June 17 - 2026
+Version Code : 161
+• Added GPU RENDERING option in Performance Settings ✔️
+• You can now set the rendering API separately for Normal Mode and Performance Mode ✔️
+• Render settings are preserved across reboots ✔️
+• Removed unsupported rom description to avoid confusion, after reboot it shows until main script loaded succesfully ✔️
+---
 June 15 - 2026
 Version Code : 160
 • Disabled low-power display restrictions for improved visual responsiveness ✔️
