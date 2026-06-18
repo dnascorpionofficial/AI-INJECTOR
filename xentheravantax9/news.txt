@@ -7,7 +7,7 @@ Version Code : 162
 • Reduced the lagging slightly in Injector Log section with parallel shell execution ✔️
 • In WebUI & News, tapping any option now brings it to the top of the list and opens it there, tap it again or open another and it returns to its normal place ✔️
 • Fixed spoof settings not highlighting the active device or responding properly ✔️
-• Old backup don't work because of new GPU RENDERING section ✔️
+• Old backup of AI INJECTOR don't work because of new GPU RENDERING section ✔️
 ---
 June 17 - 2026
 Version Code : 161
