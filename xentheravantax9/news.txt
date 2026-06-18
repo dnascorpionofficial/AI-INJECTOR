@@ -2,6 +2,7 @@ XENTHERA VANTA X9 CHANGELOGS
 
 June 19 - 2026
 Version Code : 162
+• Default GPU mode OMEGA changed to SURGE ✔️
 • Clean junk files automatically every 8 hours or when config refreshed ✔️
 • Expiry date moved from global scope & now shows exclusively in General Settings tab only ✔️
 • Reduced the lagging slightly in Injector Log section with parallel shell execution ✔️
