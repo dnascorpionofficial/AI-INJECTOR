@@ -1,7 +1,8 @@
 XENTHERA VANTA X9 CHANGELOGS
 
-June 18 - 2026
+June 19 - 2026
 Version Code : 162
+• Clean junk files automatically every 8 hours or when config refreshed ✔️
 • Expiry date moved from global scope & now shows exclusively in General Settings tab only ✔️
 • Reduced the lagging slightly in Injector Log section with parallel shell execution ✔️
 • In WebUI & News, tapping any option now brings it to the top of the list and opens it there, tap it again (or open another) and it returns to its normal place ✔️
