@@ -8,7 +8,7 @@ Version Code : 163
 • Removed few experimental tweaks that actually doing bad experiments ✔️
 • Improved normal mode ✔️
 • Hided update changes button when popup warning is visible & load button when timer <2 ✔️
-'Old backup might not work because of new configurations'
+'Old backup of AI INJECTOR might not work because of new configurations'
 ---
 June 19 - 2026
 Version Code : 162
