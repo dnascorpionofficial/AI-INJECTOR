@@ -1,5 +1,15 @@
 XENTHERA VANTA X9 CHANGELOGS
 
+June 21 - 2026
+Version Code : 163
+• Changed Default GPU mode SURGE to NEBULA ✔️
+• Upgraded the Graphics load to before boot stage ✔️
+• Added graphics loading into memory in performance settings ✔️
+• Removed few experimental tweaks that actually doing bad experiments ✔️
+• Improved normal mode ✔️
+• Hided update changes button when popup warning is visible & load button when timer <2 ✔️
+'Old backup might not work because of new configurations'
+---
 June 19 - 2026
 Version Code : 162
 • Default GPU mode OMEGA changed to SURGE ✔️
