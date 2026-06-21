@@ -2,3 +2,15 @@ QUANTHRUST VAEL X1 CHANGELOGS
 
 June 22 - 2026
 Version Code : 164
+• Optimized installation script ✔️
+• Added infinte scrolling between tabs in webui ✔️
+• Fixed update changes button showing even if there's no actual change ✔️
+• Changed default sleeping delay to 8 minutes ✔️
+• Changed update changes button to the top tab section to avoid overriding options ✔️
+• Removed laggy animation of expiry date ✔️
+• Changed style of mode switching in screen check,cpu & gpu selections ✔️
+• Fixed lagging when changing spoof ✔️
+• Changed cyan shade background completely to amoled black ✔️
+• Adapted Update changes button with the theme changes ✔️
+• Switched Toast app installation as system app instead of user app ✔️
+More changelogs update soon
