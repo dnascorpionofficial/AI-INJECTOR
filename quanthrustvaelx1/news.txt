@@ -11,6 +11,6 @@ Version Code : 164
 • Changed style of mode switching in screen check,cpu & gpu selections ✔️
 • Fixed lagging when changing spoof ✔️
 • Changed cyan shade background completely to amoled black ✔️
-• Adapted Update changes button with the theme changes ✔️
-• Switched Toast app installation as system app instead of user app ✔️
+• Adapted update changes button with the theme changes ✔️
+• Switched toast app installation as system app instead of user app ✔️
 More changelogs update soon
