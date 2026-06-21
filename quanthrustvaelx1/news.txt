@@ -13,4 +13,5 @@ Version Code : 164
 • Changed cyan shade background completely to amoled black ✔️
 • Adapted update changes button with the theme changes ✔️
 • Switched toast app installation as system app instead of user app ✔️
+• Update expiry in module description only when changing configuration or every 8 hours ✔️
 More changelogs update soon
