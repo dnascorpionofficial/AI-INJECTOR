@@ -15,6 +15,7 @@ Version Code : 164
 • Switched toast app installation as system app instead of user app ✔️
 • Update expiry in module description only when changing configuration or every 8 hours ✔️
 • Changed the round edge in boxes ✔️
+• Extended expiry date ✔️
 
 Xenthera Vanta X9 Changelogs: Download(https://www.mediafire.com/file/de4dhf1xs05zflx/Xenthera_Vanta_x9_Changelogs.txt/file)
 
