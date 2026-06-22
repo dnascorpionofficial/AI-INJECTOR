@@ -16,7 +16,7 @@ Version Code : 164
 • Update expiry in module description only when changing configuration or every 8 hours ✔️
 • Changed the round edge in boxes ✔️
 
-Xenthera Vanta X9 Changelogs : Download(https://www.mediafire.com/file/de4dhf1xs05zflx/Xenthera_Vanta_x9_Changelogs.txt/file)
+Xenthera Vanta X9 Changelogs: Download(https://www.mediafire.com/file/de4dhf1xs05zflx/Xenthera_Vanta_x9_Changelogs.txt/file)
 
 Xenthera Vanta X8 Changelogs: Download(https://www.mediafire.com/file/k5wymwkfr9irkrf/Xenthera_Vanta_x8_Changelogs.txt/file)
 
