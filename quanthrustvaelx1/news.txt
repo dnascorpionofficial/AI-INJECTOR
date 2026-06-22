@@ -14,4 +14,10 @@ Version Code : 164
 • Adapted update changes button with the theme changes ✔️
 • Switched toast app installation as system app instead of user app ✔️
 • Update expiry in module description only when changing configuration or every 8 hours ✔️
-More changelogs update soon
+• Changed the round edge in boxes ✔️
+
+Xenthera Vanta X9 Changelogs : Download(https://www.mediafire.com/file/de4dhf1xs05zflx/Xenthera_Vanta_x9_Changelogs.txt/file)
+
+Xenthera Vanta X8 Changelogs: Download(https://www.mediafire.com/file/k5wymwkfr9irkrf/Xenthera_Vanta_x8_Changelogs.txt/file)
+
+Xenthera Vanta X7 Changelogs: Download(https://www.mediafire.com/file/tpvuu8r14tyi7my/Xenthera_Vanta_x7_Changelogs.txt/file)
