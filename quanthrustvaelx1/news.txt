@@ -2,6 +2,7 @@ QUANTHRUST VAEL X1 CHANGELOGS
 
 June 27 - 2026
 Version Code : 165
+• Reduced CPU overhead during early system startup ✔️
 • Changed the failure message when expiry date or IMEI isn't fetched properly on first try - it will retry & fallback properly ✔️
 • Removed few packages that cause notification delays in CN based xiaomi roms from freez list ✔️
 • Smarter freez list syncing ✔️
