@@ -7,8 +7,7 @@ Version Code : 165
 • Smarter freez list syncing ✔️
 'When you remove an app from your freeze list, it now gets properly unfrozen right away instead of just sitting there. no more manually retrying apps to undo a freeze'
 'Apps that aren't installed (or uninstalled) are now automatically removed from your freeze list instead of lingering there uselessly'
-'Trying to manually add an app that isn't installed on your device now shows a clear (app not installed to add) warning instead of silently failing or adding a dead package'
-"ok here"
+'Trying to manually add an app that isn't installed on your device now shows a clear ''app not installed to add'' warning instead of silently failing or adding a dead package'
 ---
 June 22 - 2026
 Version Code : 164
