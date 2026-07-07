@@ -1,5 +1,11 @@
 QUANTHRUST VAEL X1 CHANGELOGS
 
+July 08 - 2026
+Version Code : 166
+• Loads graphics through dynamic linker instead of reading from storage ✔️
+• Graphics loading with count log added ✔️
+• Improved launching of performance apps ✔️
+---
 June 27 - 2026
 Version Code : 165
 • Reduced CPU overhead during early system startup ✔️
