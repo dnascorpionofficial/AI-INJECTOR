@@ -7,7 +7,7 @@ Version Code : 167
 • Completely removed shell notifications ✔️
 • Added new app for styled notifications ✔️
 • Fixed few permissions on installation ✔️
-"New App icon is around 1MB that's why the module size increased"
+'A small note to say : New App icon is around 1MB that's why the module size increased'
 ---
 July 08 - 2026
 Version Code : 166
