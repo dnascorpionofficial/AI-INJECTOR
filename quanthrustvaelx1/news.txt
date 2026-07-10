@@ -1,5 +1,14 @@
 QUANTHRUST VAEL X1 CHANGELOGS
 
+July 11 - 2026
+Version Code : 167
+• Improved RAM management ✔️
+• Improved overall device performance ✔️
+• Completely removed shell notifications ✔️
+• Added new app for styled notifications ✔️
+• Fixed few permissions on installation ✔️
+"New App icon is around 1MB that's why the module size increased"
+---
 July 08 - 2026
 Version Code : 166
 • Loads graphics through dynamic linker instead of reading from storage ✔️
