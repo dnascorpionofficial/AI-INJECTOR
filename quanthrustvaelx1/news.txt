@@ -7,7 +7,7 @@ Version Code : 167
 • Completely removed shell notifications ✔️
 • Fixed few permissions on installation ✔️
 • Added new app for styled notifications ✔️
-'A small note to say about the new Notification App - I don't have any knowledge about app development - full credit goes to : Grok(https://grok.com) & New App icon is around 1MB that's why the module size increased'
+'A small note to say about the new Notification App - I don't have any knowledge about app development - full credit goes to : Grok(https://grok.com) & Thanks to Gouenji for App icon'
 ---
 July 08 - 2026
 Version Code : 166
