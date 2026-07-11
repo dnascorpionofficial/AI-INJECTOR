@@ -4,6 +4,7 @@ July 11 - 2026
 Version Code : 168
 • Experimenting AOSP rom support ✔️
 • Fixed few minor bugs in WebUI ✔️
+• Dirty flashing comes with a hi from me 🌚
 |
 Version Code : 167
 • Improved RAM management ✔️
