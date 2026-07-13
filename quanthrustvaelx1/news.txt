@@ -1,6 +1,6 @@
 QUANTHRUST VAEL X1 CHANGELOGS
 
-July 13 - 2026
+July 14 - 2026
 Version Code : 170
 'When user reboots device from normal mode, after rebooting the mode switches accordingly so first will be probably always normal mode, that's why when checking injector logs you can see a 2 normal mode continuously - it's not a bug. to fix this we will add a new log in the file to avoid this issue'
 • Added restart log in injector log to avoid redundant normal mode log ✔️
@@ -9,7 +9,9 @@ Version Code : 170
 • Changed default sleeping delay to 6 minutes from 8 minutes ✔️
 • Auto-restore all configurations on dirty flash from next 171 build ✔️
 'You guys can backup your configuration and restore from settings after clean flash also'
-|
+• Fixed custom random messages not showing when module startup ✔️
+---
+July 13 - 2026
 Version Code : 169
 • Fixed notification isn't showing sometimes ✔️
 • Notification tones & vibration added into app + bumb version to 6.0 ✔️
