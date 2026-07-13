@@ -2,8 +2,10 @@ QUANTHRUST VAEL X1 CHANGELOGS
 
 July 13 - 2026
 Version Code : 169
+• Fixed notification isn't showing sometimes ✔️
 • Notification tones & vibration added into app ✔️
-• Added customizable performance loading tone in performance settings ✔️
+• Added customizable performance launch tone in performance settings ✔️
+• Introduced new bugs 💀
 ---
 July 11 - 2026
 Version Code : 168
