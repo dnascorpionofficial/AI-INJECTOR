@@ -7,7 +7,7 @@ Version Code : 170
 • Increased 1 second delay to activate normal mode after rebooting to avoid notification parsing failures ✔️
 • Fixed app icons in toast notification not showing in round for some apps & bumb notification app version to 7.0 ✔️
 • Changed default sleeping delay to 6 minutes from 8 minutes ✔️
-• Auto-restore all configurations on dirty flash ✔️
+• Auto-restore all configurations on dirty flash from next 171 build ✔️
 'You guys can backup your configuration and restore from settings after clean flash also'
 |
 Version Code : 169
