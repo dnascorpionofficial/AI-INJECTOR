@@ -1,5 +1,8 @@
 QUANTHRUST VAEL X1 CHANGELOGS
 
+July 21 - 2026
+Quanthrust vael x2 is almost ready, so reduced x1 expiry date, In your module description that will roll out later or you guys can see the expiry date from webui
+|
 July 14 - 2026
 Version Code : 170
 'When user reboots device from normal mode, after rebooting the mode switches accordingly so first will be probably always normal mode, that's why when checking injector logs you can see a 2 normal mode continuously - it's not a bug. to fix this we will add a new log in the file to avoid this issue'
