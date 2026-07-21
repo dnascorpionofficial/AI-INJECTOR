@@ -8,7 +8,7 @@ Version Code : 171
 • Fixed few bugs related to ram cleaning ✔️
 • Removed few dead codes ✔️
 • Fixed few bugs on installation ✔️
-'Well this is the first version of complete C binary on codes & now I have limited testers too,We will fix any issues or bugs ASAP'
+'Well, this is the first complete C binary version of the major codes, and I also have a limited number of testers. If you find any bugs or issues, I will do my best to fix them as quickly as possible within the current limitations.'
 
 Quanthrust Vael X1 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/quanthrustvaelx1/news.txt)
 
