@@ -3,8 +3,12 @@ QUANTHRUST VAEL X2 CHANGELOGS
 July 21 - 2026
 Version Code : 171
 • Major Codes are migrated to C language ✔️
-
-Quanthrust Vael X2 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/quanthrustvaelx2/news.txt)
+• Bump notification app version to 8 from 7 ✔️
+• Work per ABI support on installation ✔️
+• Fixed few bugs related to ram cleaning ✔️
+• Removed few dead codes ✔️
+• Fixed few bugs on installation ✔️
+'Well this is the first version of complete C binary on codes & now I have limited testers too,We will fix any issues or bugs ASAP'
 
 Quanthrust Vael X1 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/quanthrustvaelx1/news.txt)
 
