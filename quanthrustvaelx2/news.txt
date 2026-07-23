@@ -1,7 +1,7 @@
 QUANTHRUST VAEL X2 CHANGELOGS
 
 July 23 - 2026
-'Recently discovered several bugs that need to be fixed before the next update goes live. Am working hard to resolve every issue and make sure the release is as stable and smooth as possible'
+'Recently discovered several bugs that need to be fixed before the next update goes Live. Am trying to resolve every issue and make sure the release is as stable and smooth as possible'
 
 'At the moment, I can't provide an exact release date. Since I have limited number of testers, the testing and verification process is taking longer than usual. I don't want to rush the update and risk introducing new issues'
 
