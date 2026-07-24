@@ -1,5 +1,14 @@
 QUANTHRUST VAEL X2 CHANGELOGS
 
+July 24 - 2026
+Version Code : 172
+• Fixed a bug related to normal , sleeping mode switching + added a new option also with proper fallbacks ✔️
+• Fixed graphics warm up in performance mode settings ✔️
+• Improved network call for fetching expiry & subscription ✔️
+• Optimized few scripts ✔️
+• Removed few system apps from deprioritize settings ✔️
+• Many more..
+---
 July 23 - 2026
 'Recently discovered several bugs that need to be fixed before the next update goes Live. Am trying to resolve every issue and make sure the release is as stable and smooth as possible'
 
