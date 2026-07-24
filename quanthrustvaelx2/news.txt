@@ -7,7 +7,7 @@ Version Code : 172
 • Improved network call for fetching expiry & subscription ✔️
 • Optimized few scripts ✔️
 • Removed few system apps from deprioritize settings ✔️
-• Many more..
+• Fixed bugs related to notification sounds ✔️
 ---
 July 23 - 2026
 'Recently discovered several bugs that need to be fixed before the next update goes Live. Am trying to resolve every issue and make sure the release is as stable and smooth as possible'
