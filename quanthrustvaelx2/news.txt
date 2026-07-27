@@ -1,5 +1,10 @@
 QUANTHRUST VAEL X2 CHANGELOGS
 
+July 27 - 2026
+Version Code : 173
+• Bumb notification app to version 10 ✔️
+• Notification app now uses single notification ID to avoid Multiple notifications ✔️
+---
 July 24 - 2026
 Version Code : 172
 • Fixed a bug related to normal , sleeping mode switching + added a new option also with proper fallbacks ✔️
