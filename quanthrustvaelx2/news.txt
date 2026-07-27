@@ -4,6 +4,7 @@ July 27 - 2026
 Version Code : 173
 • Bumb notification app to version 10 ✔️
 • Notification app now uses single notification ID to avoid Multiple notifications ✔️
+• Fixed multiple audio colliding when webui loads ✔️
 ---
 July 24 - 2026
 Version Code : 172
