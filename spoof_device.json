@@ -1,41 +1,32 @@
 {
   "1": {
     "name": "Xiaomi 15 Ultra",
-    "brand": "",
-    "device": "",
+    "brand": "Black Shark",
+    "device": "Black Shark 4 (China)",
     "manufacturer": "Xiaomi",
-    "model": "25019PNF3C",
-    "product": "",
-    "fingerprint": ""
+    "model": "2SM-X706B",
+    "product": "2SM-X706B",
+    "fingerprint": "BlackShark/PRS-H0/Black Shark 4:13/TQ3A.230805.001/20230315:user/release-keys"
   },
   "2": {
-    "name": "Samsung Tab S10 Ultra",
-    "brand": "samsung",
-    "device": "",
-    "manufacturer": "samsung",
-    "model": "SM-X926B",
-    "product": "",
-    "fingerprint": ""
+    "name": "Xiaomi 11T Pro",
+    "brand": "Xiaomi",
+    "device": "Xiaomi 11T Pro",
+    "manufacturer": "Xiaomi",
+    "model": "2107113SG",
+    "product": "2107113SG",
+    "fingerprint": "Xiaomi/2107113SI/Mi 11T Pro:13/RKQ1.211001.001/20230410:user/release-keys"
   },
   "3": {
-    "name": "Lenovo Legion Gen 5",
-    "brand": "Lenovo",
-    "device": "",
-    "manufacturer": "Lenovo",
-    "model": "TB323FU",
-    "product": "",
-    "fingerprint": ""
+    "name": "ROG Phone 6D Ultimate",
+    "brand": "ASUS",
+    "device": "ROG Phone 6D Ultimate",
+    "manufacturer": "ASUS",
+    "model": "AI2203",
+    "product": "AI2203",
+    "fingerprint": "ASUS/AI2203/ROG Phone 6D:14/UP1A.231005.007/20240315:user/release-keys"
   },
   "4": {
-    "name": "Samsung S25 Ultra",
-    "brand": "samsung",
-    "device": "",
-    "manufacturer": "samsung",
-    "model": "SM-S938B",
-    "product": "",
-    "fingerprint": ""
-  },
-  "5": {
     "name": "Red Magic 11 Pro",
     "brand": "REDMAGIC",
     "device": "REDMAGIC 11 PRO",
@@ -45,15 +36,6 @@
     "fingerprint": "REDMAGIC/NX809J-UN/NX809J:16/BP2A.250605.031.A3/20251017.000000:user/release-keys"
   },
   "6": {
-    "name": "Red Magic 10 Pro",
-    "brand": "REDMAGIC",
-    "device": "",
-    "manufacturer": "Nubia",
-    "model": "NX789J",
-    "product": "",
-    "fingerprint": ""
-  },
-  "7": {
     "name": "Lenovo Legion Y700",
     "brand": "Lenovo",
     "device": "Legion Y700 (2023)",
@@ -61,14 +43,5 @@
     "model": "TB-9707F",
     "product": "TB-9707F",
     "fingerprint": "Lenovo/TB-9707F/Lenovo TB-9707F:13/TQ3A.230805.001/20230901:user/release-keys"
-  },
-  "8": {
-    "name": "OnePlus 15",
-    "brand": "OnePlus",
-    "device": "",
-    "manufacturer": "OnePlus",
-    "model": "PLK110",
-    "product": "",
-    "fingerprint": ""
   }
 }
