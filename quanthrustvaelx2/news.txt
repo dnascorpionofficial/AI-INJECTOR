@@ -1,5 +1,10 @@
 QUANTHRUST VAEL X2 CHANGELOGS
 
+July 28 - 2026
+Version Code : 174
+• Added sleeping mode exception apps list✔️
+• Adding packages not installed will not be added anymore in every list ✔️
+---
 July 27 - 2026
 Version Code : 173
 • Bumb notification app to version 10 ✔️
