@@ -1,5 +1,9 @@
 QUANTHRUST VAEL X2 CHANGELOGS
 
+July 31 - 2026
+Version Code : 175
+• Fixed permission not applying to notification app in some cases after rebooting ✔️
+---
 July 29 - 2026
 Version Code : 174
 • Added sleeping mode exception apps list✔️
