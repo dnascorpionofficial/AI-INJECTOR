@@ -13,10 +13,11 @@ Version Code : 174
 • Added sleeping mode exception apps list✔️
 • Adding packages not installed will not be added anymore in every list ✔️
 • Fixed notification app is crashing in some ROM ✔️
+• Bump notification app to version 11 ✔️
 ---
 July 27 - 2026
 Version Code : 173
-• Bumb notification app to version 10 ✔️
+• Bumb notification app to version 10 skipped version 9 ✔️
 • Notification app now uses single notification ID to avoid Multiple notifications ✔️
 • Fixed multiple audio colliding when webui loads ✔️
 ---
