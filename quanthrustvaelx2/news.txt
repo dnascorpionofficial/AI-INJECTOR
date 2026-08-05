@@ -1,5 +1,9 @@
 QUANTHRUST VAEL X2 CHANGELOGS
 
+August 06 - 2026
+• Change toast notification text to bold letters than non readable light letters ✔️
+• Bump notification app to version 12 ✔️
+---
 July 31 - 2026
 Version Code : 175
 • Fixed permission not applying to notification app in some cases after rebooting ✔️
