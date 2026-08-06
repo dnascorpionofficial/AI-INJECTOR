@@ -1,6 +1,10 @@
 QUANTHRUST VAEL X2 CHANGELOGS
 
-August 06 - 2026
+August 07 - 2026
+Version Code : 176
+• Added option to change toast background colour for normal & performance mode ✔️
+• Clean backup when doing dirty flash including the new toast background ✔️
+• C versions optimized ✔️
 • Change toast notification text to bold letters than non readable light letters ✔️
 • Bump notification app version to 12 & actions to latest version v7 ✔️
 • Optimized rust codes of loop , balance mode & core script ✔️
