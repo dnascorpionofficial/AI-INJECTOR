@@ -8,7 +8,7 @@ Version Code : 176
 • Change toast notification text to bold letters than non readable light letters ✔️
 • Bump notification app version to 12 & actions to latest version v7 ✔️
 • Optimized rust codes of loop , balance mode & core script ✔️
-• Changed random gradient colour to random single colour in performance mode & normal mode toast ✔️
+• Changed random gradient colour to random single colour in performance mode & normal mode toast by default ✔️
 • Changed hardcoded emojis to custom emojis in normal mode & performance mode ✔️
 • Remove full screen tint when device booted ✔️
 ---
