@@ -6,6 +6,7 @@ Version Code : 177
 • Added option to change toast text colour for normal & performance mode ✔️ 
 • Fixed a minor bug in rust code ✔️
 • Bump notification app to version 13 ✔️
+• Add C or Rust based description to Module ✔️
 ---
 August 06 - 2026
 Version Code : 176
