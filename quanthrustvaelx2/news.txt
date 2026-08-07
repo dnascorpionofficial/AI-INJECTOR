@@ -2,6 +2,7 @@ QUANTHRUST VAEL X2 CHANGELOGS
 
 August 07 - 2026
 Version Code : 177
+• Rust versions optimized ✔️
 • Removed multiple news updated popup ✔️
 • Add custom volume to notification app ✔️
 • Added option to change toast text colour for normal & performance mode ✔️ 
