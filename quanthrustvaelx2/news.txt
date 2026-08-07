@@ -1,8 +1,15 @@
 QUANTHRUST VAEL X2 CHANGELOGS
 
 August 07 - 2026
+Version Code : 177
+• Add custom volume to notification app ✔️
+• Added option to change toast text colour for normal & performance mode ✔️ 
+• Fixed a minor bug in rust code ✔️
+• Bump notification app to version 13 ✔️
+---
+August 06 - 2026
 Version Code : 176
-• Added option to change toast background colour for normal & performance mode ✔️
+• 
 • Clean backup when doing dirty flash including the new toast background ✔️
 • C versions optimized ✔️
 • Change toast notification text to bold letters than non readable light letters ✔️
