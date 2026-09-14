@@ -1,6 +1,26 @@
 QUANTHRUST VAEL X3 CHANGELOGS
 |
-""No more updates until someone reported anything on 185""
+---
+|
+---
+September 15 - 2026
+Version Code : 186
+"WebUI Refinement"
+Commits : +1062 / -84
+• Add active tag for modes even on changing ✔️
+• Add material UI mode in theme change section ✔️
+• Fix redundant apply button on current activation tone ✔️
+• Fix letters cropped in applists on some fonts ✔️
+• Changed default colour to white ✔️
+"Shell Part Refinement"
+Commits : +48 / -7
+• App installation to all active users ✔️
+• Skip installing app if it's same version ✔️
+"App Related Refinement"
+Commits : +291 / -19
+• Fix ScorpioN Toast App - toast notifications stuck in rare cases ✔️
+• Fix ScorpioN Companion App - accessibility stuck in rare cases ✔️
+• Update both app to version 27 ✔️
 ---
 |
 ---
