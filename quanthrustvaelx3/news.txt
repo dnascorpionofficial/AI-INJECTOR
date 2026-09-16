@@ -2,6 +2,9 @@ QUANTHRUST VAEL X3 CHANGELOGS
 |
 September 15 - 2026
 Version Code : 186
+"C & Rust Part Refinement"
+Commits : +476 / -26
+• Dedicated per thread boosting on every 8 second in performance mode ✔️
 "WebUI Refinement"
 Commits : +1062 / -84
 • Fix reboot button override in custom charging ✔️
