@@ -1,5 +1,16 @@
 QUANTHRUST VAEL X3 CHANGELOGS
 |
+September 18 - 2026
+Version Code : 187
+"WebUI Refinement"
+Commits : +1481 / -432
+• Fix some fonts cropped in material UI ✔️
+• Add Neumorphic UI style ✔️
+• Improved WebUI speed ✔️
+• User free edits on theme - request for submission ✔️
+---
+|
+---
 September 15 - 2026
 Version Code : 186
 "C & Rust Part Refinement"
