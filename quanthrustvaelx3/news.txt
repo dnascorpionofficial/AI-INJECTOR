@@ -1,5 +1,13 @@
 QUANTHRUST VAEL X3 CHANGELOGS
 |
+September 20 - 2026
+Version Code : 188
+"WebUI Refinement"
+Commits : +136 / -460
+• Fix same package can be add again on every applists which is unnecessary ✔️
+---
+|
+---
 September 18 - 2026
 Version Code : 187
 "WebUI Refinement"
