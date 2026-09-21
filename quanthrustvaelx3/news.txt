@@ -4,11 +4,11 @@ September 22 - 2026
 Version Code : 188
 "WebUI Refinement"
 Commits : +136 / -460
-• Fix same package can be add again on every applists which is unnecessary ✔️
-• Reworked every applist codes with shared helper for reducing javascript size ✔️
+• Fix same package can be add again on every applists which is unnecessary 
+• Reworked every applist codes with shared helper for reducing javascript size 
 "App Related Refinement"
 Commits : +29 / -13
-• scorpion.companiom - Fix performance app not detected in accessibility method in edge cases ✔️
+• scorpion.companiom - Fix performance app not detected in accessibility method in edge cases 
 ---
 |
 ---
@@ -16,10 +16,10 @@ September 18 - 2026
 Version Code : 187
 "WebUI Refinement"
 Commits : +1481 / -432
-• Fix some fonts cropped in material UI ✔️
-• Add Neumorphic UI style ✔️
-• Improved WebUI speed ✔️
-• User free edits on theme - request for submission ✔️
+• Fix some fonts cropped in material UI 
+• Add Neumorphic UI style 
+• Improved WebUI speed 
+• User free edits on theme - request for submission 
 ---
 |
 ---
@@ -27,25 +27,25 @@ September 15 - 2026
 Version Code : 186
 "C & Rust Part Refinement"
 Commits : +476 / -26
-• Dedicated per thread boosting on every 8 second in performance mode ✔️
+• Dedicated per thread boosting on every 8 second in performance mode 
 "WebUI Refinement"
 Commits : +1062 / -84
-• Fix reboot button override in custom charging ✔️
-• Fix flashing random border on mode picking when it close ✔️
-• Add active tag for modes even on changing ✔️
-• Add material UI mode in theme change section ✔️
-• Fix redundant apply button on current activation tone ✔️
-• Fix letters cropped in applists on some fonts ✔️
-• Changed default colour to white ✔️
+• Fix reboot button override in custom charging 
+• Fix flashing random border on mode picking when it close 
+• Add active tag for modes even on changing 
+• Add material UI mode in theme change section 
+• Fix redundant apply button on current activation tone 
+• Fix letters cropped in applists on some fonts 
+• Changed default colour to white 
 "Shell Part Refinement"
 Commits : +48 / -7
-• App installation to all active users ✔️
-• Skip installing app if it's same version ✔️
+• App installation to all active users 
+• Skip installing app if it's same version 
 "App Related Refinement"
 Commits : +291 / -19
-• Fix ScorpioN Toast App - toast notifications stuck in rare cases ✔️
-• Fix ScorpioN Companion App - accessibility stuck in rare cases ✔️
-• Update both app to version 27 ✔️
+• Fix ScorpioN Toast App - toast notifications stuck in rare cases 
+• Fix ScorpioN Companion App - accessibility stuck in rare cases 
+• Update both app to version 27 
 ---
 |
 ---
@@ -53,60 +53,60 @@ September 05 - 2026
 Version Code : 185
 "C & Rust Part Refinement"
 Commits : +1998 / -199
-• Moved RAM Cleaning to an independent process ✔️
-• Use epoll/inotifyd method to load the datas than an indefinite loop running every x seconds ✔️
-• Completely removed screen check modes that increase overhead - we use companion app now ✔️
-• Fixed background battery drain from constant screen & app checking ✔️
-• Removed unnecessary periodic checks every 17 seconds - module now reacts instantly to real changes only ✔️
-• Better mode switching ✔️
+• Moved RAM Cleaning to an independent process 
+• Use epoll/inotifyd method to load the datas than an indefinite loop running every x seconds 
+• Completely removed screen check modes that increase overhead - we use companion app now 
+• Fixed background battery drain from constant screen & app checking 
+• Removed unnecessary periodic checks every 17 seconds - module now reacts instantly to real changes only 
+• Better mode switching 
 "WebUI Refinement"
 Commits : +821 / -193
-• Fix content allignment in AI Injector logs & Battery logs ✔️
-• Fix restart injector & soft reboot ui toggle don't reflect the current state without reopening webui ✔️
-• Removed screen check option from webui ✔️
-• Replaced screen check with companion mode option (Accessibility / Polling) for the ScorpioN Companion app ✔️
-• Renamed log files from random PID-based names to fixed name when exporting full logs ✔️
-• Fetch everything related to module through logd & dmesg in seperate files when exporting full logs ✔️
+• Fix content allignment in AI Injector logs & Battery logs 
+• Fix restart injector & soft reboot ui toggle don't reflect the current state without reopening webui 
+• Removed screen check option from webui 
+• Replaced screen check with companion mode option (Accessibility / Polling) for the ScorpioN Companion app 
+• Renamed log files from random PID-based names to fixed name when exporting full logs 
+• Fetch everything related to module through logd & dmesg in seperate files when exporting full logs 
 "App Related Refinement"
 Commits : +4491 / -535
-• Added a new ScorpioN Companion app for fetching datas to activate modes accordingly ✔️
-• Fallback polling of current app is live every 8 second ✔️
-• Updated Companion & Toast app versions to 26 ✔️
-• Companion app only support Android 12 & above - Toast app supports Android 10 & above ✔️
+• Added a new ScorpioN Companion app for fetching datas to activate modes accordingly 
+• Fallback polling of current app is live every 8 second 
+• Updated Companion & Toast app versions to 26 
+• Companion app only support Android 12 & above - Toast app supports Android 10 & above 
 "Shell Part Refinement"
 Commits : +1 / -0
-• Main configuration file restore when dirty flashing from 185 & above versions ✔️
+• Main configuration file restore when dirty flashing from 185 & above versions 
 ---
 |
 ---
 August 29 - 2026
 Version Code : 184
 "Shell Part Refinement"
-• Optimized installation script ✔️
+• Optimized installation script 
 "WebUI Refinement"
-• Remove force new theme on auth verification ✔️
-• Fix randomly triggering main ui before authorised check ✔️
-• Fix delay alligned of showing return button in the custom charging menu ✔️
-• Killed the continuous 16ms refresh screen when scorpion creature animation is on ✔️
-• Fix return button freez when swiping from sub options ✔️
-• Add support swipe to close from sub options ✔️
-• Add a live test button for toast colour change section ✔️
-• Changed custom buttons from save intro ✔️
+• Remove force new theme on auth verification 
+• Fix randomly triggering main ui before authorised check 
+• Fix delay alligned of showing return button in the custom charging menu 
+• Killed the continuous 16ms refresh screen when scorpion creature animation is on 
+• Fix return button freez when swiping from sub options 
+• Add support swipe to close from sub options 
+• Add a live test button for toast colour change section 
+• Changed custom buttons from save intro 
 ---
 |
 ---
 August 26 - 2026
 Version Code : 183
 "C & Rust Part Refinement"
-• Replaced hardcoded values with dynamic placements ✔️
+• Replaced hardcoded values with dynamic placements 
 "Shell Part Refinement"
-• Retuned the sleep exception list restoration on dirty flash ✔️
+• Retuned the sleep exception list restoration on dirty flash 
 "WebUI Refinement"
-• Forced to new default theme colour (Can change from theme change anyways but on dirty flash/clean flash it will be forced to use new colour - I will remove this from 184 build) ✔️
-• Fix default theme colour isn't saving to storage ✔️
-• Changed active font style ✔️
-• Fix allignment in AI Injector & Battery logs ✔️
-• Reduced speed of going back scorpion creature animation ✔️
+• Forced to new default theme colour (Can change from theme change anyways but on dirty flash/clean flash it will be forced to use new colour - I will remove this from 184 build) 
+• Fix default theme colour isn't saving to storage 
+• Changed active font style 
+• Fix allignment in AI Injector & Battery logs 
+• Reduced speed of going back scorpion creature animation 
 ---
 |
 ---
