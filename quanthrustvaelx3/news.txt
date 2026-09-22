@@ -1,17 +1,22 @@
 QUANTHRUST VAEL X3 CHANGELOGS
 |
-September 22 - 2026
+September 23 - 2026
 Version Code : 188
 "WebUI Refinement"
 Commits : +136 / -460
 • Fix same package can be add again on every applists which is unnecessary 
-• Reworked every applist codes with shared helper for reducing javascript size 
+• Reworked every applist codes with shared helper for reducing javascript size
+• Add debug_events of accessibility services when exporting full logs
 "App Related Refinement"
 Commits : +139 / -41
 • scorpion.companiom - Fix performance app not detected in accessibility method in edge cases
 • scorpion.companiom - Fix crash loops on lockscreen
 • scorpion.toast - Fix crashes in some ROM & updated seplicy.rule
 • scorpion.toast - Fixed notification being stucked in some edge cases
+• Both app update to version 32
+"C & Rust Part Refinement"
+Commits : +101 / -97
+• Fix faster mode switching not working in some edge cases
 ---
 |
 ---
