@@ -5,11 +5,12 @@ Version Code : 189
 "C & Rust Part Refinement"
 Commits : +3 / -119
 • Optimized codes
+• Add a helper to find the companion crash on some Roms
 "App Related Refinement"
 Commits : +79 / -811
 • Optimized scorpion.toast & scorpion.companion
 • Changed audio format to .flac from .wav in toast app
-• Update both app versions to 34
+• Update both app versions to 35
 "Shell Part Refinement"
 Commits : +7 / -4
 • Shows current or new version of apps on module install
