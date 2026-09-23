@@ -1,5 +1,18 @@
 QUANTHRUST VAEL X3 CHANGELOGS
 |
+September 24 - 2026
+Version Code : 189
+"App Related Refinement"
+Commits : +79 / -811
+• Optimized scorpion.toast & scorpion.companion
+• Changed audio format to .flac from .wav in toast app
+• Update both app versions to 34
+"Shell Part Refinement"
+Commits : +7 / -4
+• Shows current or new version of apps on module install
+---
+|
+---
 September 23 - 2026
 Version Code : 188
 "WebUI Refinement"
