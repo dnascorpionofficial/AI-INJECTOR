@@ -5,7 +5,7 @@ Version Code : 189
 "C & Rust Part Refinement"
 Commits : +3 / -119
 • Optimized codes
-• Add a helper to find the companion crash on some Roms
+• Add a helper to find the companion crash on some ROM
 "App Related Refinement"
 Commits : +79 / -811
 • Optimized scorpion.toast & scorpion.companion
