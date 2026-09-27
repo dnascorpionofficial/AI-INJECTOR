@@ -1,5 +1,28 @@
 QUANTHRUST VAEL X3 CHANGELOGS
 |
+September 28 - 2026
+Version Code : 190
+"C & Rust Part Refinement"
+Commits : +831 / -260
+• Add ram management experimental settings
+• Improve random trigger balance mode when performance app is active
+• Optimize main script
+"App Related Refinement"
+Commits : +16 / -16
+• Optimized toast app size
+• Update scorpion.toast to version 37
+"Shell Part Refinement"
+Commits : +5 / -4
+• Add new ram tweaks settings and backup
+"WebUI Refinement"
+Commits : +371 / -92
+• Add new RAM management settings
+• Fix some font letters are cropped in input screen
+• Optimized all fonts
+• Replaced stock font with AOSP ROM based stock font
+---
+|
+---
 September 25 - 2026
 Version Code : 189
 "C & Rust Part Refinement"
