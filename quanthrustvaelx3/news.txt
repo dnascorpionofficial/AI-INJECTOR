@@ -1,10 +1,10 @@
 QUANTHRUST VAEL X3 CHANGELOGS
 |
-September 28 - 2026
+September 29 - 2026
 Version Code : 190
 "C & Rust Part Refinement"
 Commits : +831 / -260
-• Add ram management experimental settings
+• Add ram management experimental settings stay across reboot
 • Improve random trigger balance mode when performance app is active
 • Optimize main script
 "App Related Refinement"
@@ -15,11 +15,12 @@ Commits : +16 / -16
 Commits : +5 / -4
 • Add new ram tweaks settings and backup
 "WebUI Refinement"
-Commits : +371 / -92
+Commits : +393 / -101
 • Add new RAM management settings
 • Fix some font letters are cropped in input screen
 • Optimized all fonts
 • Replaced stock font with AOSP ROM based stock font
+• Removed all stuffs from webui related to old RAM Cleaning tweaks
 ---
 |
 ---
