@@ -1,6 +1,14 @@
 QUANTHRUST VAEL X3 CHANGELOGS
-""Total X3 Builds : 08/12""
+""Total X3 Builds : 08 / 12""
 |
+September 30 - 2026
+Version Code : 191
+"WebUI Refinement"
+Commits : +1 / -1
+• Change default UI mode stroke to Material UI
+---
+|
+---
 September 29 - 2026
 Version Code : 190
 "C & Rust Part Refinement"
