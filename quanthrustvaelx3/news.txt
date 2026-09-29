@@ -6,6 +6,16 @@ Version Code : 191
 "WebUI Refinement"
 Commits : +1 / -1
 • Change default UI mode stroke to Material UI
+"C & Rust Part Refinement"
+Commits : +16 / -16
+• Fix reforging message crash on edge case
+• Fix some gun sound not playing when selected for performance mode
+"App Related Refinement"
+Commits : +86 / -2
+• scorpion.toast - Fix toast text become cropped
+• scorpion.toast - Move icon to progress bar line
+• scorpion.toast - Make toast text centre alligned
+scorpion.toast - Update version to 40
 ---
 |
 ---
