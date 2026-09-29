@@ -15,7 +15,7 @@ Commits : +86 / -2
 • scorpion.toast - Fix toast text become cropped
 • scorpion.toast - Move icon to progress bar line
 • scorpion.toast - Make toast text centre alligned
-scorpion.toast - Update version to 40
+• scorpion.toast - Update version to 40
 ---
 |
 ---
