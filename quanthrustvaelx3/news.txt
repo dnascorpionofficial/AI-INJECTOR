@@ -177,3 +177,5 @@ Xenthera Vanta X9 Changelogs: Download(https://raw.githubusercontent.com/dnascor
 Xenthera Vanta X8 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/xentheravantax8/news.txt)
 
 Xenthera Vanta X7 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/xentheravantax7/news.txt)
+
+Xenthera Vanta X6 Changelogs: Download(https://github.com/dnascorpionofficial/AI-INJECTOR/blob/main/xentheravantax6/news.txt)
