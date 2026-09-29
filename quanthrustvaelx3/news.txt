@@ -4,8 +4,9 @@ QUANTHRUST VAEL X3 CHANGELOGS
 September 30 - 2026
 Version Code : 191
 "WebUI Refinement"
-Commits : +1 / -1
+Commits : +2 / -2
 • Change default UI mode stroke to Material UI
+• Increase rendering speed of news update
 "C & Rust Part Refinement"
 Commits : +16 / -16
 • Fix reforging message crash on edge case
