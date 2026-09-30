@@ -14,9 +14,10 @@ Commits : +240 / -188
 • Add inline keyboard in auth verification screen
 • Fix triggering double notification sound on verification
 "C & Rust Part Refinement"
-Commits : +16 / -16
+Commits : +92 / -41
 • Fix reforging message crash on edge case
 • Fix some gun sound not playing when selected for performance mode
+• Improve LMK whitelist applying loop
 "App Related Refinement"
 Commits : +86 / -2
 • scorpion.toast - Fix toast text become cropped
