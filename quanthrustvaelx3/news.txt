@@ -4,8 +4,7 @@ QUANTHRUST VAEL X3 CHANGELOGS
 September 30 - 2026
 Version Code : 191
 "WebUI Refinement"
-Commits : +239 / -187
-• Change default UI mode stroke to Material UI
+Commits : +240 / -188
 • Increase rendering speed of news update
 • Remove scorpion icon on startup
 • Add different spinner on startup
