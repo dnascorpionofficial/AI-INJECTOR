@@ -4,11 +4,15 @@ QUANTHRUST VAEL X3 CHANGELOGS
 September 30 - 2026
 Version Code : 191
 "WebUI Refinement"
-Commits : +27 / -168
+Commits : +239 / -187
 • Change default UI mode stroke to Material UI
 • Increase rendering speed of news update
 • Remove scorpion icon on startup
 • Add different spinner on startup
+• Rebuild auth verification screen with picked UI style
+• Add retry button on auth verification screen
+• Increased animation FPS on auth verification screen
+• Add inline keyboard in auth verification screen
 "C & Rust Part Refinement"
 Commits : +16 / -16
 • Fix reforging message crash on edge case
