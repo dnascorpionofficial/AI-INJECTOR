@@ -4,7 +4,7 @@ QUANTHRUST VAEL X3 CHANGELOGS
 October 01 - 2026
 Version Code : 191
 "WebUI Refinement"
-Commits : +831 / -279
+Commits : +841 / -303
 • Increase rendering speed of news update
 • Remove scorpion icon on startup
 • Add different spinner on startup
@@ -19,6 +19,7 @@ Commits : +831 / -279
 • Remove redundant theme override in custom charging
 • Add pill shaped animation on material & neumorphic like stroke UI
 • Fix intro name input box not visible
+• Remove AI INJECTOR title glow & colour
 "C & Rust Part Refinement"
 Commits : +92 / -41
 • Fix reforging message crash on edge case
