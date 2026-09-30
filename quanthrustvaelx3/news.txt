@@ -4,7 +4,7 @@ QUANTHRUST VAEL X3 CHANGELOGS
 September 30 - 2026
 Version Code : 191
 "WebUI Refinement"
-Commits : +240 / -188
+Commits : +688 / -219
 • Increase rendering speed of news update
 • Remove scorpion icon on startup
 • Add different spinner on startup
@@ -13,6 +13,8 @@ Commits : +240 / -188
 • Increased animation FPS on auth verification screen
 • Add inline keyboard in auth verification screen
 • Fix triggering double notification sound on verification
+• Add light & dark mode switch
+• Fix customized colour not applying in stroke ui
 "C & Rust Part Refinement"
 Commits : +92 / -41
 • Fix reforging message crash on edge case
