@@ -13,6 +13,7 @@ Commits : +239 / -187
 • Add retry button on auth verification screen
 • Increased animation FPS on auth verification screen
 • Add inline keyboard in auth verification screen
+• Fix triggering double notification sound on verification
 "C & Rust Part Refinement"
 Commits : +16 / -16
 • Fix reforging message crash on edge case
