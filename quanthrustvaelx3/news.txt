@@ -1,6 +1,14 @@
 QUANTHRUST VAEL X3 CHANGELOGS
-""Total X3 Builds : 09 / 12""
+""Total X3 Builds : 10 / 12""
 |
+October 02 - 2026
+Version Code : 192
+"WebUI Refinement"
+Commits : +774 / -5
+• Replaced plain switch for light & dark with lever setup
+---
+|
+---
 October 01 - 2026
 Version Code : 191
 "WebUI Refinement"
