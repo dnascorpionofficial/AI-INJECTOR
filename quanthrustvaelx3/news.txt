@@ -7,6 +7,7 @@ Version Code : 192
 Commits : +775 / -25
 • Replaced light & dark theme plain switches with lever setup
 • Unified titles in custom charging section
+• Fix main ui is flashing before auth screen in neumorphic ui style
 ---
 |
 ---
