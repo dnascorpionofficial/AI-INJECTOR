@@ -4,8 +4,9 @@ QUANTHRUST VAEL X3 CHANGELOGS
 October 02 - 2026
 Version Code : 192
 "WebUI Refinement"
-Commits : +774 / -5
+Commits : +775 / -25
 • Replaced light & dark theme plain switches with lever setup
+• Unified titles in custom charging section
 ---
 |
 ---
