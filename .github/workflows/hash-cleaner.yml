@@ -91,7 +91,7 @@ jobs:
               SHORT = HASH[:12] + "..."
               FIELDS = ENTRY["FIELDS"]
 
-              MISSING = [NAME for NAME in ("target", "loaddate", "maxday", "enddate", "endtime", "utcoffset") if not FIELDS.get(NAME)]
+              MISSING = [NAME for NAME in ("target", "loaddate", "enddate", "endtime", "utcoffset") if not FIELDS.get(NAME)]
               if MISSING:
                   print(f"[SKIPPED] {SHORT} | Missing required field(s): {', '.join(MISSING)}")
                   SKIPPED_COUNT += 1
@@ -100,7 +100,6 @@ jobs:
               try:
                   TARGET = FIELDS["target"]
                   END_HOUR, END_MINUTE = PARSE_HOUR_MINUTE(FIELDS["endtime"])
-                  MAX_DAY = int(FIELDS["maxday"])
               except Exception as ERROR:
                   print(f"[SKIPPED] {SHORT} | Invalid or missing fields ({ERROR!r})")
                   SKIPPED_COUNT += 1
@@ -116,19 +115,20 @@ jobs:
               NOW = datetime.now(ZONE)
 
               try:
-                  LOAD_DATE = datetime.strptime(FIELDS["loaddate"].replace("/", "-"), "%Y-%m-%d")
-                  END_DATE = datetime.strptime(FIELDS["enddate"].replace("/", "-"), "%Y-%m-%d")
+                  LOAD_DATE = datetime.strptime(FIELDS["loaddate"].replace("/", "-"), "%d-%m-%Y")
+                  END_DATE = datetime.strptime(FIELDS["enddate"].replace("/", "-"), "%d-%m-%Y")
               except ValueError:
-                  print(f"[SKIPPED] {SHORT} | Invalid loaddate or enddate (use YYYY-MM-DD)")
+                  print(f"[SKIPPED] {SHORT} | Invalid loaddate or enddate (use DD-MM-YYYY)")
                   SKIPPED_COUNT += 1
                   continue
 
-              EXPECTED_END = LOAD_DATE + timedelta(days=MAX_DAY)
-              if EXPECTED_END.date() != END_DATE.date():
-                  print(f"[WARNING] {SHORT} | loaddate + maxday gives {EXPECTED_END:%Y-%m-%d} but enddate is {END_DATE:%Y-%m-%d}, using enddate")
+              if END_DATE < LOAD_DATE:
+                  print(f"[SKIPPED] {SHORT} | enddate {END_DATE:%d-%m-%Y} is before loaddate {LOAD_DATE:%d-%m-%Y}")
+                  SKIPPED_COUNT += 1
+                  continue
 
               DEADLINE = END_DATE.replace(hour=END_HOUR, minute=END_MINUTE, tzinfo=ZONE)
-              DEADLINE_TEXT = f"{DEADLINE:%Y-%m-%d %H:%M} ({OFFSET_TEXT})"
+              DEADLINE_TEXT = f"{DEADLINE:%d-%m-%Y %H:%M} ({OFFSET_TEXT})"
 
               if NOW < DEADLINE:
                   print(f"[WAITING] {SHORT} | Time left to clear: {FORMAT_DURATION(DEADLINE - NOW)} | Clears at {DEADLINE_TEXT} | Target: {TARGET}")
