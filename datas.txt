@@ -10,7 +10,7 @@ UTCoffset: UTC offset for the times above (e.g. UTC+5:30)
 hash: 8ee373ffd00a80b952f25c9a6a7f9f0b376526b1081cc4d5cc90ff62de8f9917
 target: quanthrustvaelx3/ROM/t1build.txt
 loaddate: 01-10-2026
-enddate: 04-10-2026
+enddate: 03-10-2026
 endtime: 17:20
 UTCoffset: UTC+5:30
 
