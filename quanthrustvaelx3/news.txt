@@ -13,6 +13,7 @@ Commits : +923 / -127
 • Font name styling changed across every UI modes
 • Make black colour default when switch from dark mode if colour is white
 • Toast colour changing selected style changed
+• Add hold override to skip animation of switching light & dark modes
 ---
 |
 ---
