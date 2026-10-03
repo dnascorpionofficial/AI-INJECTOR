@@ -1,3 +1,0 @@
-September 14 - 2026
-Version Code : 186
-• Fix redundant app installation on dirty flash ✔️
