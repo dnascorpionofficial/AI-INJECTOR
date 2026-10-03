@@ -11,6 +11,7 @@ Commits : +913 / -122
 • Remove unnecessary button glow effects
 • Make stroke ui exactly a plain text style
 • Font name styling changed across every UI modes
+• Make black colour default when switch from dark mode if colour is white
 ---
 |
 ---
