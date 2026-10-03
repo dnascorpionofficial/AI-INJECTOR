@@ -1,6 +1,8 @@
 name: Hash Cleaner
 
 on:
+  schedule:
+    - cron: "0 */6 * * *"
   push:
     paths: [datas.txt]
   workflow_dispatch:
@@ -189,7 +191,11 @@ jobs:
           git config user.name "Hash Cleaner"
           git config user.email "hashcleaner@users.noreply.github.com"
           git add -A
-          git commit -m "chore: clear expired hashes [skip ci]"
+          CHANGED=$(git diff --cached --name-only)
+          PARTS=""
+          echo "$CHANGED" | grep -qx "$DATA_FILE" && PARTS="clear expired hashes"
+          echo "$CHANGED" | grep -qx ".github/workflows/$WORKFLOW_FILE" && PARTS="${PARTS:+$PARTS, }sync cron"
+          git commit -m "chore: ${PARTS:-update files} [skip ci]"
           git pull --rebase
           git push
           echo "[INFO] Changes committed and pushed"
@@ -203,3 +209,4 @@ jobs:
             [ "$RUN_ID" != "$GITHUB_RUN_ID" ] && gh run delete "$RUN_ID" || true
           done
           echo "[INFO] Old workflow runs deleted"
+          
