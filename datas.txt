@@ -13,5 +13,5 @@ target: quanthrustvaelx3/ROM/t1build.txt
 loaddate: 2026-10-01
 maxday: 2
 enddate: 2026-10-03
-endtime: 18:16
+endtime: 17:20
 UTCoffset: UTC+5:30
