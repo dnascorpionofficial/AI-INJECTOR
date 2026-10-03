@@ -1,6 +1,8 @@
 name: Hash Updater
 
 on:
+  schedule:
+    - cron: "0 */6 * * *"
   push:
     paths: ["Hash Clean Data.txt"]
   workflow_dispatch:
@@ -201,8 +203,8 @@ jobs:
             echo "[INFO] No changes to commit"
             exit 0
           fi
-          git config user.name "Hash Cleaner"
-          git config user.email "hashcleaner@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
           CHANGED=$(git diff --cached --name-only)
           OTHER=$(echo "$CHANGED" | grep -vx "$DATA_FILE" | grep -vx ".github/workflows/$WORKFLOW_FILE" || true)
