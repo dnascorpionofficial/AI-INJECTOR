@@ -1,6 +1,8 @@
 name: Hash Cleaner
 
 on:
+  schedule:
+    - cron: "0 */6 * * *"
   push:
     paths: [datas.txt]
   workflow_dispatch:
