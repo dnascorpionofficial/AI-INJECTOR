@@ -1,0 +1,194 @@
+name: Hash Cleaner
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: hash-cleaner
+  cancel-in-progress: false
+
+env:
+  DATA_FILE: datas.txt
+  WORKFLOW_FILE: hash-cleaner.yml
+
+jobs:
+  clean:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Process Hash Rules
+        run: |
+          python3 - <<'PY'
+          import os, re
+          from datetime import datetime, timedelta, timezone
+
+          DATA_PATH = os.environ["DATA_FILE"]
+          REPO_ROOT = os.path.realpath(".")
+
+          def PARSE_UTC_OFFSET(TEXT):
+              MATCH = re.fullmatch(r"(?i)UTC\s*([+-])\s*(\d{1,2})(?::(\d{2}))?", TEXT.strip())
+              if not MATCH:
+                  raise ValueError("Invalid offset")
+              SIGN = -1 if MATCH.group(1) == "-" else 1
+              HOURS = int(MATCH.group(2))
+              MINUTES = int(MATCH.group(3) or 0)
+              if HOURS > 14 or MINUTES > 59:
+                  raise ValueError("Offset out of range")
+              return timezone(SIGN * timedelta(hours=HOURS, minutes=MINUTES))
+
+          def PARSE_HOUR_MINUTE(TEXT):
+              HOUR, MINUTE = TEXT.split(":")
+              return int(HOUR), int(MINUTE)
+
+          def PLURAL(COUNT, WORD):
+              return f"{COUNT} {WORD}" + ("" if COUNT == 1 else "s")
+
+          def FORMAT_DURATION(DELTA):
+              TOTAL_MINUTES = max(int(DELTA.total_seconds() // 60), 0)
+              DAYS, REMAINDER = divmod(TOTAL_MINUTES, 1440)
+              HOURS, MINUTES = divmod(REMAINDER, 60)
+              return f"{PLURAL(DAYS, 'day')}, {PLURAL(HOURS, 'hour')}, {PLURAL(MINUTES, 'minute')}"
+
+          if not os.path.isfile(DATA_PATH):
+              print(f"[INFO] {DATA_PATH} not found, nothing to do")
+              raise SystemExit(0)
+
+          with open(DATA_PATH, encoding="utf-8", newline="") as FILE:
+              LINES = FILE.read().split("\n")
+
+          ENTRIES = []
+          CURRENT = None
+          for INDEX, LINE in enumerate(LINES):
+              STRIPPED = LINE.strip()
+              if re.match(r"(?i)^hash\s*:", STRIPPED):
+                  CURRENT = {"INDEX": INDEX, "HASH": STRIPPED.split(":", 1)[1].strip(), "FIELDS": {}}
+                  ENTRIES.append(CURRENT)
+                  continue
+              if not STRIPPED or STRIPPED.startswith("---"):
+                  CURRENT = None
+                  continue
+              if CURRENT and ":" in STRIPPED:
+                  KEY, VALUE = STRIPPED.split(":", 1)
+                  CURRENT["FIELDS"][KEY.strip().lower()] = VALUE.strip()
+
+          CHANGED = False
+          CLEARED_COUNT = 0
+          WAITING_COUNT = 0
+          SKIPPED_COUNT = 0
+
+          for ENTRY in ENTRIES:
+              HASH = ENTRY["HASH"]
+              if not HASH or re.search(r"\s", HASH):
+                  continue
+              SHORT = HASH[:12] + "..."
+              FIELDS = ENTRY["FIELDS"]
+
+              MISSING = [NAME for NAME in ("target", "loaddate", "maxday", "enddate", "endtime", "utcoffset") if not FIELDS.get(NAME)]
+              if MISSING:
+                  print(f"[SKIPPED] {SHORT} | Missing required field(s): {', '.join(MISSING)}")
+                  SKIPPED_COUNT += 1
+                  continue
+
+              try:
+                  TARGET = FIELDS["target"]
+                  END_HOUR, END_MINUTE = PARSE_HOUR_MINUTE(FIELDS["endtime"])
+                  MAX_DAY = int(FIELDS["maxday"])
+              except Exception as ERROR:
+                  print(f"[SKIPPED] {SHORT} | Invalid or missing fields ({ERROR!r})")
+                  SKIPPED_COUNT += 1
+                  continue
+
+              OFFSET_TEXT = FIELDS["utcoffset"]
+              try:
+                  ZONE = PARSE_UTC_OFFSET(OFFSET_TEXT)
+              except Exception:
+                  print(f"[SKIPPED] {SHORT} | Invalid UTCoffset '{OFFSET_TEXT}' (use e.g. UTC+5:30)")
+                  SKIPPED_COUNT += 1
+                  continue
+              NOW = datetime.now(ZONE)
+
+              try:
+                  LOAD_DATE = datetime.strptime(FIELDS["loaddate"].replace("/", "-"), "%Y-%m-%d")
+                  END_DATE = datetime.strptime(FIELDS["enddate"].replace("/", "-"), "%Y-%m-%d")
+              except ValueError:
+                  print(f"[SKIPPED] {SHORT} | Invalid loaddate or enddate (use YYYY-MM-DD)")
+                  SKIPPED_COUNT += 1
+                  continue
+
+              EXPECTED_END = LOAD_DATE + timedelta(days=MAX_DAY)
+              if EXPECTED_END.date() != END_DATE.date():
+                  print(f"[WARNING] {SHORT} | loaddate + maxday gives {EXPECTED_END:%Y-%m-%d} but enddate is {END_DATE:%Y-%m-%d}, using enddate")
+
+              DEADLINE = END_DATE.replace(hour=END_HOUR, minute=END_MINUTE, tzinfo=ZONE)
+              DEADLINE_TEXT = f"{DEADLINE:%Y-%m-%d %H:%M} ({OFFSET_TEXT})"
+
+              if NOW < DEADLINE:
+                  print(f"[WAITING] {SHORT} | Time left to clear: {FORMAT_DURATION(DEADLINE - NOW)} | Clears at {DEADLINE_TEXT} | Target: {TARGET}")
+                  WAITING_COUNT += 1
+                  continue
+
+              TARGET_PATH = os.path.realpath(TARGET)
+              if not TARGET_PATH.startswith(REPO_ROOT + os.sep):
+                  print(f"[SKIPPED] {SHORT} | Target is outside the repository: {TARGET}")
+                  SKIPPED_COUNT += 1
+                  continue
+
+              if os.path.isfile(TARGET_PATH):
+                  with open(TARGET_PATH, encoding="utf-8", newline="") as FILE:
+                      TARGET_LINES = FILE.read().split("\n")
+                  KEPT_LINES = [ITEM for ITEM in TARGET_LINES if HASH not in ITEM]
+                  REMOVED = len(TARGET_LINES) - len(KEPT_LINES)
+                  if REMOVED:
+                      with open(TARGET_PATH, "w", encoding="utf-8", newline="") as FILE:
+                          FILE.write("\n".join(KEPT_LINES))
+                      print(f"[CLEARED] {SHORT} | Removed {REMOVED} line(s) from {TARGET} | Was due {DEADLINE_TEXT}")
+                  else:
+                      print(f"[INFO] {SHORT} | Hash not present in {TARGET}, nothing to remove")
+              else:
+                  print(f"[INFO] {SHORT} | Target {TARGET} does not exist, treating as clean")
+
+              ORIGINAL = LINES[ENTRY["INDEX"]]
+              LINES[ENTRY["INDEX"]] = ORIGINAL[: ORIGINAL.index(":") + 1] + ("\r" if ORIGINAL.endswith("\r") else "")
+              print(f"[CLEARED] {SHORT} | Hash value cleared in {DATA_PATH}")
+              CLEARED_COUNT += 1
+              CHANGED = True
+
+          if CHANGED:
+              with open(DATA_PATH, "w", encoding="utf-8", newline="") as FILE:
+                  FILE.write("\n".join(LINES))
+
+          print(f"[SUMMARY] Cleared: {CLEARED_COUNT} | Waiting: {WAITING_COUNT} | Skipped: {SKIPPED_COUNT}")
+          PY
+
+      - name: Commit Changes
+        run: |
+          if git diff --quiet; then
+            echo "[INFO] No changes to commit"
+            exit 0
+          fi
+          git config user.name "Hash Cleaner"
+          git config user.email "hashcleaner@users.noreply.github.com"
+          git add -A
+          git commit -m "chore: clear expired hashes [skip ci]"
+          git pull --rebase
+          git push
+          echo "[INFO] Changes committed and pushed"
+
+      - name: Delete Old Workflow Runs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh run list --workflow "$WORKFLOW_FILE" --status completed --limit 100 \
+            --json databaseId --jq '.[].databaseId' | while read -r RUN_ID; do
+            [ "$RUN_ID" != "$GITHUB_RUN_ID" ] && gh run delete "$RUN_ID" || true
+          done
+          echo "[INFO] Old workflow runs deleted"
+          
