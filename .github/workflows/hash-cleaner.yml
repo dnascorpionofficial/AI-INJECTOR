@@ -85,6 +85,7 @@ jobs:
 
           CHANGED = False
           CLEARED_COUNT = 0
+          WRITTEN_COUNT = 0
           WAITING_COUNT = 0
           SKIPPED_COUNT = 0
 
@@ -134,15 +135,29 @@ jobs:
               DEADLINE = END_DATE.replace(hour=END_HOUR, minute=END_MINUTE, tzinfo=ZONE)
               DEADLINE_TEXT = f"{DEADLINE:%d-%m-%Y %H:%M} ({OFFSET_TEXT})"
 
-              if NOW < DEADLINE:
-                  print(f"[WAITING] {SHORT} | Time left to clear: {FORMAT_DURATION(DEADLINE - NOW)} | Clears at {DEADLINE_TEXT} | Target: {TARGET}")
-                  WAITING_COUNT += 1
-                  continue
-
               TARGET_PATH = os.path.realpath(TARGET)
               if not TARGET_PATH.startswith(REPO_ROOT + os.sep):
                   print(f"[SKIPPED] {SHORT} | Target is outside the repository: {TARGET}")
                   SKIPPED_COUNT += 1
+                  continue
+
+              if NOW < DEADLINE:
+                  CONTENT = ""
+                  if os.path.isfile(TARGET_PATH):
+                      with open(TARGET_PATH, encoding="utf-8", newline="") as FILE:
+                          CONTENT = FILE.read()
+                  if any(HASH in ITEM for ITEM in CONTENT.split("\n")):
+                      STATE = "Already in target"
+                  else:
+                      os.makedirs(os.path.dirname(TARGET_PATH), exist_ok=True)
+                      if CONTENT and not CONTENT.endswith("\n"):
+                          CONTENT += "\n"
+                      with open(TARGET_PATH, "w", encoding="utf-8", newline="") as FILE:
+                          FILE.write(CONTENT + HASH + "\n")
+                      STATE = "Written to target"
+                      WRITTEN_COUNT += 1
+                  print(f"[WAITING] {SHORT} | {STATE} | Time left to clear: {FORMAT_DURATION(DEADLINE - NOW)} | Clears at {DEADLINE_TEXT} | Target: {TARGET}")
+                  WAITING_COUNT += 1
                   continue
 
               if os.path.isfile(TARGET_PATH):
@@ -169,7 +184,7 @@ jobs:
               with open(DATA_PATH, "w", encoding="utf-8", newline="") as FILE:
                   FILE.write("\n".join(LINES))
 
-          print(f"[SUMMARY] Cleared: {CLEARED_COUNT} | Waiting: {WAITING_COUNT} | Skipped: {SKIPPED_COUNT}")
+          print(f"[SUMMARY] Written: {WRITTEN_COUNT} | Cleared: {CLEARED_COUNT} | Waiting: {WAITING_COUNT} | Skipped: {SKIPPED_COUNT}")
           PY
 
       - name: Sync Cron
@@ -192,8 +207,13 @@ jobs:
           git config user.email "hashcleaner@users.noreply.github.com"
           git add -A
           CHANGED=$(git diff --cached --name-only)
+          OTHER=$(echo "$CHANGED" | grep -vx "$DATA_FILE" | grep -vx ".github/workflows/$WORKFLOW_FILE" || true)
           PARTS=""
-          echo "$CHANGED" | grep -qx "$DATA_FILE" && PARTS="clear expired hashes"
+          if echo "$CHANGED" | grep -qx "$DATA_FILE"; then
+            PARTS="clear expired hashes"
+          elif [ -n "$OTHER" ]; then
+            PARTS="add hashes to target"
+          fi
           echo "$CHANGED" | grep -qx ".github/workflows/$WORKFLOW_FILE" && PARTS="${PARTS:+$PARTS, }sync cron"
           git commit -m "chore: ${PARTS:-update files} [skip ci]"
           git pull --rebase
@@ -209,4 +229,3 @@ jobs:
             [ "$RUN_ID" != "$GITHUB_RUN_ID" ] && gh run delete "$RUN_ID" || true
           done
           echo "[INFO] Old workflow runs deleted"
-          
