@@ -3,6 +3,8 @@ name: Hash Cleaner
 on:
   schedule:
     - cron: "0 */6 * * *"
+  push:
+    paths: [datas.txt]
   workflow_dispatch:
 
 permissions:
@@ -23,6 +25,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.WORKFLOW_PAT }}
 
       - name: Process Hash Rules
         run: |
@@ -167,6 +171,16 @@ jobs:
 
           print(f"[SUMMARY] Cleared: {CLEARED_COUNT} | Waiting: {WAITING_COUNT} | Skipped: {SKIPPED_COUNT}")
           PY
+
+      - name: Sync Cron
+        run: |
+          FILE=".github/workflows/$WORKFLOW_FILE"
+          if grep -Eiq '^\s*hash\s*:\s*\S' "$DATA_FILE" 2>/dev/null; then
+            grep -q '^  schedule:' "$FILE" || \
+              sed -i '/^on:/a\  schedule:\n    - cron: "0 */6 * * *"' "$FILE"
+          else
+            sed -i '/^  schedule:/,/cron:/d' "$FILE"
+          fi
 
       - name: Commit Changes
         run: |
