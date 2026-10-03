@@ -208,14 +208,14 @@ Version Code : 183
 ---
 |
 ---
-Quanthrust Vael X2 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/quanthrustvaelx2/news.txt)
+Quanthrust Vael X2 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/Old-Versions/quanthrustvaelx2/news.txt)
 
-Quanthrust Vael X1 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/quanthrustvaelx1/news.txt)
+Quanthrust Vael X1 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/Old-Versions/quanthrustvaelx1/news.txt)
 
-Xenthera Vanta X9 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/xentheravantax9/news.txt)
+Xenthera Vanta X9 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/Old-Versions/xentheravantax9/news.txt)
 
-Xenthera Vanta X8 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/xentheravantax8/news.txt)
+Xenthera Vanta X8 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/Old-Versions/xentheravantax8/news.txt)
 
-Xenthera Vanta X7 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/xentheravantax7/news.txt)
+Xenthera Vanta X7 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/Old-Versions/xentheravantax7/news.txt)
 
-Xenthera Vanta X6 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/xentheravantax6/news.txt)
+Xenthera Vanta X6 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/Old-Versions/xentheravantax6/news.txt)
