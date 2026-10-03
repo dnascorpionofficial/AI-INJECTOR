@@ -175,7 +175,7 @@ jobs:
       - name: Sync Cron
         run: |
           FILE=".github/workflows/$WORKFLOW_FILE"
-          if grep -Eiq '^\s*hash\s*:\s*\S' "$DATA_FILE" 2>/dev/null; then
+          if grep -Eiq '^\s*hash\s*:\s*\S+\s*$' "$DATA_FILE" 2>/dev/null; then
             grep -q '^  schedule:' "$FILE" || \
               sed -i '/^on:/a\  schedule:\n    - cron: "0 */6 * * *"' "$FILE"
           else
