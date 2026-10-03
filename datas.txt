@@ -1,0 +1,17 @@
+------------------
+CUSTOM RULES
+hash: Hash to clean
+target: Target path to clean
+loaddate: Date the hash was loaded (YYYY-MM-DD)
+loadtime: in 24 hours (Hour:Minute)
+maxday: number of day to clear
+endtime: in 24 hours (Hour:Minute) to clear
+UTCoffset: UTC offset for the times above (e.g. UTC+5:30)
+------------------
+hash: 6d12a2683e5037f5246a1e1f9fbdb8d4902911fa385c606e98f4187168dcd916
+target: quanthrustvaelx3/ROM/t1build.txt
+loaddate: 2026-10-01
+maxday: 2
+enddate: 2026-10-03
+endtime: 18:16
+UTCoffset: UTC+5:30
