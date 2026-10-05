@@ -1,6 +1,15 @@
 QUANTHRUST VAEL X3 CHANGELOGS
 ""Total X3 Builds : 10 / 12""
 |
+October 05 - 2026
+Version Code : 193
+commits : +539 / -494
+• Optimize late boot staging
+• Remove bind mounting thermal files
+• Add webview update check on installation
+---
+|
+---
 October 04 - 2026
 Version Code : 192
 "WebUI Refinement"
