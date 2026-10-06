@@ -1,7 +1,7 @@
 QUANTHRUST VAEL X3 CHANGELOGS
 ""Total X3 Builds : 10 / 12""
 |
-October 05 - 2026
+October 06 - 2026
 Version Code : 193
 commits : +781 / -591
 "Shell Part Refinement"
@@ -9,6 +9,10 @@ commits : +781 / -591
 • Remove bind mounting thermal files
 • Add webview update check on installation
 • Restyle installation script
+"C & Rust Part Refinement"
+Commits : +68 / -19
+• Fix performance mode stuck in edge cases
+• Optimized thread boosting
 ---
 |
 ---
