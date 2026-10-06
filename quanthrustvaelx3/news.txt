@@ -10,10 +10,11 @@ commits : +781 / -591
 • Add webview update check on installation
 • Restyle installation script
 "C & Rust Part Refinement"
-Commits : +121 / -20
+Commits : +127 / -83
 • Fix performance mode stuck in edge cases
 • Optimized thread boosting
 • Improved performance mode trigger
+• Dropped few codes from post boot
 ---
 |
 ---
