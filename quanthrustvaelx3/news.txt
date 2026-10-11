@@ -7,8 +7,9 @@ Version Code : 194
 Commits : +67 / -26
 • Update gpu rendering settings with selection
 "WebUI Refinement"
-Commits : +129 / -16
+Commits : +153 / -17
 • Add toggle for gpu rendering
+• Add close buttons in overlays
 "Shell Part Refinement"
 commits : +2 / -2
 • Update main configuration restore from version 194
