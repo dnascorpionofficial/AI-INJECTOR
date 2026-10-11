@@ -1,10 +1,24 @@
 QUANTHRUST VAEL X3 CHANGELOGS
-""Total X3 Builds : 11 / 12""
+""Total X3 Builds : 12 / 12""
 |
+October 12 - 2026
+Version Code : 194
+"C & Rust Part Refinement"
+Commits : +67 / -26
+• Update gpu rendering settings with selection
+"WebUI Refinement"
+Commits : +129 / -16
+• Add toggle for gpu rendering
+"Shell Part Refinement"
+commits : +2 / -2
+• Update main configuration restore from version 194
+---
+|
+---
 October 07 - 2026
 Version Code : 193
-commits : +781 / -591
 "Shell Part Refinement"
+commits : +781 / -591
 • Optimize late boot staging
 • Remove bind mounting thermal files
 • Add webview update check on installation
