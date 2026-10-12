@@ -1,0 +1,22 @@
+QUANTHRUST VAEL X4 CHANGELOGS
+""Total X3 Builds : 01 / 15""
+|
+October 13 - 2026
+Version Code : 195
+• Cleanup codes
+---
+|
+---
+Quanthrust Vael X3 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/Old-Versions/quanthrustvaelx3/news.txt)
+
+Quanthrust Vael X2 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/Old-Versions/quanthrustvaelx2/news.txt)
+
+Quanthrust Vael X1 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/Old-Versions/quanthrustvaelx1/news.txt)
+
+Xenthera Vanta X9 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/Old-Versions/xentheravantax9/news.txt)
+
+Xenthera Vanta X8 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/Old-Versions/xentheravantax8/news.txt)
+
+Xenthera Vanta X7 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/Old-Versions/xentheravantax7/news.txt)
+
+Xenthera Vanta X6 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/Old-Versions/xentheravantax6/news.txt)

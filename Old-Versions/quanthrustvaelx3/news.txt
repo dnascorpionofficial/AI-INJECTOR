@@ -1,0 +1,261 @@
+QUANTHRUST VAEL X3 CHANGELOGS
+""Total X3 Builds : 12 / 12""
+|
+October 12 - 2026
+Version Code : 194
+"C & Rust Part Refinement"
+Commits : +67 / -26
+• Update gpu rendering settings with selection
+"WebUI Refinement"
+Commits : +153 / -17
+• Add toggle for gpu rendering
+• Add close buttons in overlays
+"Shell Part Refinement"
+commits : +2 / -2
+• Update main configuration restore from version 194
+"App Related Refinement"
+Commits : +17 / -2
+• Update both app to normal versioning
+• scorpion.companion - Update version to 3.9
+• scorpion.toast - Update version to 4.2
+---
+|
+---
+October 07 - 2026
+Version Code : 193
+"Shell Part Refinement"
+commits : +781 / -591
+• Optimize late boot staging
+• Remove bind mounting thermal files
+• Add webview update check on installation
+• Restyle installation script
+"C & Rust Part Refinement"
+Commits : +127 / -83
+• Fix performance mode stuck in edge cases
+• Optimized thread boosting
+• Improved performance mode trigger
+• Dropped few codes from post boot
+---
+|
+---
+October 04 - 2026
+Version Code : 192
+"WebUI Refinement"
+Commits : +2205 / -933
+• Replaced light & dark theme plain switches with lever setup
+• Unified titles in custom charging section
+• Fix main ui is flashing before auth screen in neumorphic ui style
+• Remove unnecessary button glow effects
+• Make stroke ui exactly a plain text style
+• Font name styling changed across every UI modes
+• Make black colour default when switch from dark mode if colour is white
+• Toast colour changing selected style changed
+• Add hold override to skip animation of switching light & dark modes
+• Replaced invert filter with real css tokens
+• Fix popup notification icon invisible in light mode
+---
+|
+---
+October 01 - 2026
+Version Code : 191
+"WebUI Refinement"
+Commits : +841 / -303
+• Increase rendering speed of news update
+• Remove scorpion icon on startup
+• Add different spinner on startup
+• Rebuild auth verification screen with picked UI style
+• Add retry button on auth verification screen
+• Increased animation FPS on auth verification screen
+• Add inline keyboard in auth verification screen
+• Fix triggering double notification sound on verification
+• Add light & dark mode switch
+• Fix customized colour not applying in stroke ui
+• Remove selected glow in toast notification change
+• Remove redundant theme override in custom charging
+• Add pill shaped animation on material & neumorphic like stroke UI
+• Fix intro name input box not visible
+• Remove AI INJECTOR title glow & colour
+"C & Rust Part Refinement"
+Commits : +92 / -41
+• Fix reforging message crash on edge case
+• Fix some gun sound not playing when selected for performance mode
+• Improve LMK whitelist applying loop
+"App Related Refinement"
+Commits : +86 / -2
+• scorpion.toast - Fix toast text become cropped
+• scorpion.toast - Move icon to progress bar line
+• scorpion.toast - Make toast text centre alligned
+• scorpion.toast - Update version to 40
+---
+|
+---
+September 29 - 2026
+Version Code : 190
+"C & Rust Part Refinement"
+Commits : +831 / -260
+• Add ram management experimental settings stay across reboot
+• Improve random trigger balance mode when performance app is active
+• Optimize main script
+"App Related Refinement"
+Commits : +16 / -16
+• Optimized toast app size
+• Update scorpion.toast to version 37
+"Shell Part Refinement"
+Commits : +5 / -4
+• Add new ram tweaks settings and backup
+"WebUI Refinement"
+Commits : +393 / -101
+• Add new RAM management settings
+• Fix some font letters are cropped in input screen
+• Optimized all fonts
+• Replaced stock font with AOSP ROM based stock font
+• Removed all stuffs from webui related to old RAM Cleaning tweaks
+---
+|
+---
+September 25 - 2026
+Version Code : 189
+"C & Rust Part Refinement"
+Commits : +3 / -119
+• Optimized codes
+• Add a helper to find the companion crash on some ROM
+"App Related Refinement"
+Commits : +79 / -811
+• Optimized scorpion.toast & scorpion.companion
+• Changed audio format to .flac from .wav in toast app
+• Update both app versions to 35
+"Shell Part Refinement"
+Commits : +7 / -4
+• Shows current or new version of apps on module install
+---
+|
+---
+September 23 - 2026
+Version Code : 188
+"WebUI Refinement"
+Commits : +136 / -460
+• Fix same package can be add again on every applists which is unnecessary 
+• Reworked every applist codes with shared helper for reducing javascript size
+• Add debug_events of accessibility services when exporting full logs
+"App Related Refinement"
+Commits : +139 / -41
+• scorpion.companiom - Fix performance app not detected in accessibility method in edge cases
+• scorpion.companiom - Fix crash loops on lockscreen
+• scorpion.toast - Fix crashes in some ROM & updated seplicy.rule
+• scorpion.toast - Fixed notification being stucked in some edge cases
+• Both app update to version 32
+"C & Rust Part Refinement"
+Commits : +101 / -97
+• Fix faster mode switching not working in some edge cases
+---
+|
+---
+September 18 - 2026
+Version Code : 187
+"WebUI Refinement"
+Commits : +1481 / -432
+• Fix some fonts cropped in material UI 
+• Add Neumorphic UI style 
+• Improved WebUI speed 
+• User free edits on theme - request for submission 
+---
+|
+---
+September 15 - 2026
+Version Code : 186
+"C & Rust Part Refinement"
+Commits : +476 / -26
+• Dedicated per thread boosting on every 8 second in performance mode 
+"WebUI Refinement"
+Commits : +1062 / -84
+• Fix reboot button override in custom charging 
+• Fix flashing random border on mode picking when it close 
+• Add active tag for modes even on changing 
+• Add material UI mode in theme change section 
+• Fix redundant apply button on current activation tone 
+• Fix letters cropped in applists on some fonts 
+• Changed default colour to white 
+"Shell Part Refinement"
+Commits : +48 / -7
+• App installation to all active users 
+• Skip installing app if it's same version 
+"App Related Refinement"
+Commits : +291 / -19
+• Fix ScorpioN Toast App - toast notifications stuck in rare cases 
+• Fix ScorpioN Companion App - accessibility stuck in rare cases 
+• Update both app to version 27 
+---
+|
+---
+September 05 - 2026
+Version Code : 185
+"C & Rust Part Refinement"
+Commits : +1998 / -199
+• Moved RAM Cleaning to an independent process 
+• Use epoll/inotifyd method to load the datas than an indefinite loop running every x seconds 
+• Completely removed screen check modes that increase overhead - we use companion app now 
+• Fixed background battery drain from constant screen & app checking 
+• Removed unnecessary periodic checks every 17 seconds - module now reacts instantly to real changes only 
+• Better mode switching 
+"WebUI Refinement"
+Commits : +821 / -193
+• Fix content allignment in AI Injector logs & Battery logs 
+• Fix restart injector & soft reboot ui toggle don't reflect the current state without reopening webui 
+• Removed screen check option from webui 
+• Replaced screen check with companion mode option (Accessibility / Polling) for the ScorpioN Companion app 
+• Renamed log files from random PID-based names to fixed name when exporting full logs 
+• Fetch everything related to module through logd & dmesg in seperate files when exporting full logs 
+"App Related Refinement"
+Commits : +4491 / -535
+• Added a new ScorpioN Companion app for fetching datas to activate modes accordingly 
+• Fallback polling of current app is live every 8 second 
+• Updated Companion & Toast app versions to 26 
+• Companion app only support Android 12 & above - Toast app supports Android 10 & above 
+"Shell Part Refinement"
+Commits : +1 / -0
+• Main configuration file restore when dirty flashing from 185 & above versions 
+---
+|
+---
+August 29 - 2026
+Version Code : 184
+"Shell Part Refinement"
+• Optimized installation script 
+"WebUI Refinement"
+• Remove force new theme on auth verification 
+• Fix randomly triggering main ui before authorised check 
+• Fix delay alligned of showing return button in the custom charging menu 
+• Killed the continuous 16ms refresh screen when scorpion creature animation is on 
+• Fix return button freez when swiping from sub options 
+• Add support swipe to close from sub options 
+• Add a live test button for toast colour change section 
+• Changed custom buttons from save intro 
+---
+|
+---
+August 26 - 2026
+Version Code : 183
+"C & Rust Part Refinement"
+• Replaced hardcoded values with dynamic placements 
+"Shell Part Refinement"
+• Retuned the sleep exception list restoration on dirty flash 
+"WebUI Refinement"
+• Forced to new default theme colour (Can change from theme change anyways but on dirty flash/clean flash it will be forced to use new colour - I will remove this from 184 build) 
+• Fix default theme colour isn't saving to storage 
+• Changed active font style 
+• Fix allignment in AI Injector & Battery logs 
+• Reduced speed of going back scorpion creature animation 
+---
+|
+---
+Quanthrust Vael X2 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/Old-Versions/quanthrustvaelx2/news.txt)
+
+Quanthrust Vael X1 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/Old-Versions/quanthrustvaelx1/news.txt)
+
+Xenthera Vanta X9 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/Old-Versions/xentheravantax9/news.txt)
+
+Xenthera Vanta X8 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/Old-Versions/xentheravantax8/news.txt)
+
+Xenthera Vanta X7 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/Old-Versions/xentheravantax7/news.txt)
+
+Xenthera Vanta X6 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/Old-Versions/xentheravantax6/news.txt)
