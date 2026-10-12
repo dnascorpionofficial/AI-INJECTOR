@@ -3,7 +3,12 @@ QUANTHRUST VAEL X4 CHANGELOGS
 |
 October 13 - 2026
 Version Code : 195
-• Cleanup codes
+"Shell Part Refinement"
+commits : +17 / -16
+• Fix name quirk on some logs and installation script
+"WebUI Part Refinement"
+commits : +21 / -2
+• Fix few ROM based quirks on log export
 ---
 |
 ---
