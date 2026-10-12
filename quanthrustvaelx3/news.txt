@@ -13,6 +13,11 @@ Commits : +153 / -17
 "Shell Part Refinement"
 commits : +2 / -2
 • Update main configuration restore from version 194
+"App Related Refinement"
+Commits : +17 / -2
+• Update both app to normal versioning
+• scorpion.companion - Update version to 3.9
+• scorpion.toast - Update version to 4.2
 ---
 |
 ---
