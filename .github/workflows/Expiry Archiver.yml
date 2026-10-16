@@ -1,0 +1,180 @@
+name: Expiry Archiver
+
+on:
+  push:
+    paths: ["Live Folder.txt"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: expiry-archiver
+  cancel-in-progress: false
+
+env:
+  LIVE_FILE: Live Folder.txt
+  ARCHIVE_DIR: Old-Versions
+  KEEP_FILES: expiry.txt,news.txt
+  UTC_OFFSET: UTC+5:30
+  CRON_EXPR: 30 18 * * *
+  WORKFLOW_FILE: Expiry Archiver.yml
+
+jobs:
+  archive:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v7
+        with:
+          token: ${{ secrets.WORKFLOW_PAT }}
+
+      - name: Archive Expired Folders
+        run: |
+          python3 - <<'PY'
+          import os, re, shutil
+          from datetime import datetime, timedelta, timezone
+
+          LIVE_PATH = os.environ["LIVE_FILE"]
+          ARCHIVE = os.environ["ARCHIVE_DIR"]
+          KEEP = set(os.environ["KEEP_FILES"].split(","))
+          REPO_ROOT = os.path.realpath(".")
+
+          def PARSE_UTC_OFFSET(TEXT):
+              MATCH = re.fullmatch(r"(?i)UTC\s*([+-])\s*(\d{1,2})(?::(\d{2}))?", TEXT.strip())
+              if not MATCH:
+                  raise ValueError("Invalid offset")
+              SIGN = -1 if MATCH.group(1) == "-" else 1
+              return timezone(SIGN * timedelta(hours=int(MATCH.group(2)), minutes=int(MATCH.group(3) or 0)))
+
+          def IS_NO_DATA(LINE):
+              return LINE.strip().lower() in ("", "no data")
+
+          if not os.path.isfile(LIVE_PATH):
+              print(f"[INFO] {LIVE_PATH} not found, nothing to do")
+              raise SystemExit(0)
+
+          with open(LIVE_PATH, encoding="utf-8", newline="") as FILE:
+              LINES = FILE.read().replace("\r", "").split("\n")
+
+          FOLDERS = [LINE.strip() for LINE in LINES if not IS_NO_DATA(LINE)]
+          if not FOLDERS:
+              print("[INFO] No Data, nothing to check")
+              raise SystemExit(0)
+
+          TODAY = datetime.now(PARSE_UTC_OFFSET(os.environ["UTC_OFFSET"])).date()
+          print(f"[INFO] Today ({os.environ['UTC_OFFSET']}): {TODAY:%d-%m-%Y}")
+
+          REMAINING = []
+          ARCHIVED_COUNT = 0
+
+          for NAME in FOLDERS:
+              if NAME in REMAINING:
+                  continue
+
+              if "/" in NAME or "\\" in NAME or NAME in (".", "..") or NAME.startswith(".") or NAME == ARCHIVE:
+                  print(f"[SKIPPED] {NAME} | Must be a plain folder name in the repo root")
+                  REMAINING.append(NAME)
+                  continue
+
+              SRC = os.path.join(REPO_ROOT, NAME)
+              if not os.path.isdir(SRC):
+                  print(f"[INFO] {NAME} | Folder not found (already archived?), removed from {LIVE_PATH}")
+                  continue
+
+              EXPIRY_PATH = os.path.join(SRC, "expiry.txt")
+              if not os.path.isfile(EXPIRY_PATH):
+                  print(f"[SKIPPED] {NAME} | expiry.txt missing")
+                  REMAINING.append(NAME)
+                  continue
+
+              with open(EXPIRY_PATH, encoding="utf-8") as FILE:
+                  RAW = next((L.strip() for L in FILE.read().splitlines() if L.strip()), "")
+              try:
+                  EXPIRY = datetime.strptime(RAW.replace("/", "-"), "%Y-%m-%d").date()
+              except ValueError:
+                  print(f"[SKIPPED] {NAME} | Invalid expiry '{RAW}' (use YYYY-MM-DD)")
+                  REMAINING.append(NAME)
+                  continue
+
+              if TODAY < EXPIRY:
+                  print(f"[WAITING] {NAME} | Expires {EXPIRY:%d-%m-%Y} | {(EXPIRY - TODAY).days} day(s) left")
+                  REMAINING.append(NAME)
+                  continue
+
+              # Expired: strip everything except expiry.txt / news.txt (this removes ROM)
+              for ITEM in os.listdir(SRC):
+                  if ITEM in KEEP:
+                      continue
+                  ITEM_PATH = os.path.join(SRC, ITEM)
+                  if os.path.isdir(ITEM_PATH) and not os.path.islink(ITEM_PATH):
+                      shutil.rmtree(ITEM_PATH)
+                  else:
+                      os.remove(ITEM_PATH)
+                  print(f"[INFO] {NAME} | Deleted {ITEM}")
+
+              DEST = os.path.join(REPO_ROOT, ARCHIVE, NAME)
+              if os.path.isdir(DEST):
+                  # Destination already prepared by hand: keep its files, only fill missing ones
+                  for ITEM in os.listdir(SRC):
+                      if os.path.exists(os.path.join(DEST, ITEM)):
+                          print(f"[INFO] {NAME} | {ARCHIVE}/{NAME}/{ITEM} already exists, kept as is")
+                      else:
+                          shutil.move(os.path.join(SRC, ITEM), os.path.join(DEST, ITEM))
+                  shutil.rmtree(SRC)
+              else:
+                  os.makedirs(os.path.dirname(DEST), exist_ok=True)
+                  shutil.move(SRC, DEST)
+
+              print(f"[ARCHIVED] {NAME} | Expired {EXPIRY:%d-%m-%Y} | Moved to {ARCHIVE}/{NAME}")
+              ARCHIVED_COUNT += 1
+
+          NEW_CONTENT = "\n".join(REMAINING) + "\n" if REMAINING else "No Data\n"
+          if NEW_CONTENT != "\n".join(LINES).rstrip("\n") + "\n":
+              with open(LIVE_PATH, "w", encoding="utf-8", newline="") as FILE:
+                  FILE.write(NEW_CONTENT)
+              print(f"[INFO] {LIVE_PATH} updated")
+
+          print(f"[SUMMARY] Archived: {ARCHIVED_COUNT} | Still live: {len(REMAINING)}")
+          PY
+
+      - name: Sync Cron
+        run: |
+          FILE=".github/workflows/$WORKFLOW_FILE"
+          if grep -Eiv '^\s*(no data)?\s*$' "$LIVE_FILE" 2>/dev/null | grep -q .; then
+            grep -q '^  schedule:' "$FILE" || \
+              sed -i "/^on:/a\\  schedule:\\n    - cron: \"$CRON_EXPR\"" "$FILE"
+          else
+            sed -i '/^  schedule:/,/cron:/d' "$FILE"
+          fi
+
+      - name: Commit Changes
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "[INFO] No changes to commit"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          CHANGED=$(git diff --cached --name-only)
+          PARTS=""
+          if echo "$CHANGED" | grep -q "^$ARCHIVE_DIR/\|^[^/]*/ROM/"; then
+            PARTS="archive expired folders"
+          fi
+          echo "$CHANGED" | grep -qx ".github/workflows/$WORKFLOW_FILE" && PARTS="${PARTS:+$PARTS, }sync cron"
+          git commit -m "chore: ${PARTS:-update files} [skip ci]"
+          git pull --rebase
+          git push
+          echo "[INFO] Changes committed and pushed"
+
+      - name: Delete Old Workflow Runs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh run list --workflow "$WORKFLOW_FILE" --status completed --limit 100 \
+            --json databaseId --jq '.[].databaseId' | while read -r RUN_ID; do
+            [ "$RUN_ID" != "$GITHUB_RUN_ID" ] && gh run delete "$RUN_ID" || true
+          done
+          echo "[INFO] Old workflow runs deleted"
