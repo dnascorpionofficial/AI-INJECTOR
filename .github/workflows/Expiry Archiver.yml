@@ -1,8 +1,6 @@
 name: Expiry Archiver
 
 on:
-  schedule:
-    - cron: "30 18 * * *"
   push:
     paths: ["Live Folder.txt"]
   workflow_dispatch:
