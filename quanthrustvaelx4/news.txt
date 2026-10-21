@@ -1,5 +1,14 @@
 QUANTHRUST VAEL X4 CHANGELOGS
 |
+October 21 - 2026
+Version Code : 196
+"WebUI Part Refinement"
+commits : +18 / -8
+• Fix error of favourite icon on some root methods
+• Update webui x based engine icon
+---
+|
+---
 October 16 - 2026
 Version Code : 195
 "Shell Part Refinement"
