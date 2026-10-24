@@ -1,5 +1,17 @@
 QUANTHRUST VAEL X4 CHANGELOGS
 |
+October 24 - 2026
+Version Code : 198
+"Shell Part Refinement"
+commits : +51 / -8
+• Add few more root method support
+"WebUI Part Refinement"
+commits : +79 / -2
+• Add day based logs
+• Add root method & meta module on full log
+---
+|
+---
 October 22 - 2026
 Version Code : 197
 "C & Rust Part Refinement"
