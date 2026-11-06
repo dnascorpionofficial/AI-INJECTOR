@@ -1,5 +1,11 @@
 QUANTHRUST VAEL X4 CHANGELOGS
 |
+November 06 - 2026
+Version Code : 200
+• Cleanup
+---
+|
+---
 October 26 - 2026
 Version Code : 199
 "WebUI Part Refinement"
