@@ -1,5 +1,14 @@
 QUANTHRUST VAEL X4 CHANGELOGS
 |
+November 07 - 2026
+Version Code : 201
+"C & Rust Part Refinement"
+commits : +940 / -101
+• Fix expiry patch not showing in edge cases
+• Improved shared helpers
+---
+|
+---
 November 06 - 2026
 Version Code : 200
 • Cleanup
