@@ -1,5 +1,13 @@
 QUANTHRUST VAEL X4 CHANGELOGS
 |
+November 08 - 2026
+Version Code : 202
+"C & Rust Part Refinement"
+commits : +2 / -2
+• Reduce the data refresh time to 7 hour 50 minutes from 10 hour 10 minutes
+---
+|
+---
 November 07 - 2026
 Version Code : 201
 "C & Rust Part Refinement"
