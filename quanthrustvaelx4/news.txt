@@ -88,7 +88,7 @@ Quanthrust Vael X1 Changelogs: READ(https://raw.githubusercontent.com/dnascorpio
 
 Xenthera Vanta X9 Changelogs: READ(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/Old-Versions/xentheravantax9/news.txt)
 
-Xenthera Vanta X8 Changelogs: Download(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/Old-Versions/xentheravantax8/news.txt)
+Xenthera Vanta X8 Changelogs: READ(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/Old-Versions/xentheravantax8/news.txt)
 
 Xenthera Vanta X7 Changelogs: READ(https://raw.githubusercontent.com/dnascorpionofficial/AI-INJECTOR/refs/heads/main/Old-Versions/xentheravantax7/news.txt)
 
