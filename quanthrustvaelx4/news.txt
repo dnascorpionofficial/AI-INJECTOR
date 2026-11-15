@@ -1,5 +1,17 @@
 QUANTHRUST VAEL X4 CHANGELOGS
 |
+November 16 - 2026
+Version Code : 204
+"C & Rust Part Refinement"
+commits : +61 / -29
+• Fix WebUI X rendering issues
+• Drop deprecated codes
+"Shell/Bash Part Refinement"
+commits : +1 / -0
+• Cleanup on uninstall
+---
+|
+---
 November 11 - 2026
 Version Code : 203
 "Shell/Bash Part Refinement"
